@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   id="Layer_1"
+   data-name="Layer 1"
+   viewBox="0 0 64.000001 64"
+   version="1.1"
+   sodipodi:docname="fx.svg"
+   width="64"
+   height="64"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs427" />
+  <sodipodi:namedview
+     id="namedview425"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="true"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="true"
+     inkscape:zoom="9.8333333"
+     inkscape:cx="27.661017"
+     inkscape:cy="40.728814"
+     inkscape:window-width="1920"
+     inkscape:window-height="1137"
+     inkscape:window-x="-8"
+     inkscape:window-y="-1"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="Layer_1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid595" />
+  </sodipodi:namedview>
+  <title
+     id="title420">volume-mute</title>
+  <path
+     d="M 20.139008,17.089889 H 35.022663 L 47.335345,4.6839296 c 0.910891,-0.9119054 2.388814,-0.9119054 3.299707,0 0.445048,0.4309647 0.695515,1.0245101 0.693753,1.644023 v 0 51.3028434 c 0.0294,2.122194 -2.561024,3.177135 -4.022609,1.638194 L 35.13926,49.358212 H 20.139008 c -4.120507,-0.0096 -7.458446,-3.347555 -7.468061,-7.468062 V 24.557951 c 0.0097,-4.120507 3.347554,-7.458445 7.468061,-7.468062 z"
+     id="path422"
+     sodipodi:nodetypes="ccccscccccccc"
+     style="stroke-width:1;fill:#ffffff" />
+  <metadata
+     id="metadata593">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>volume-mute</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+</svg>

@@ -1,0 +1,32 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://objects/rooms/radial_reverse.tscn" type="PackedScene" id=1]
+
+[node name="OctagonReverseRoom" type="Node"]
+
+[node name="RadialReverse" parent="." instance=ExtResource( 1 )]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+z_index = 5
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+visible = false
+polygon = PoolVector2Array( 210, 420, 380, 590, 620, 590, 790, 420, 790, 180, 620, 10, 380, 10, 210, 180, 210, 420, -100, 420, -100, -100, 1100, -100, 1100, 700, -100, 700, -100, 420 )
+
+[node name="Polygon2D" type="Polygon2D" parent="StaticBody2D"]
+color = Color( 0.145098, 0.145098, 0.145098, 1 )
+polygon = PoolVector2Array( 210, 420, 380, 590, 620, 590, 790, 420, 790, 180, 620, 10, 380, 10, 210, 180, 210, 420, -10, 420, -10, -10, 1010, -10, 1010, 610, -10, 610, -10, 420 )
+__meta__ = {
+"_editor_description_": "Polygon which masks grid."
+}
+
+[node name="Line2D" type="Line2D" parent="StaticBody2D"]
+position = Vector2( -0.582822, -62.424 )
+scale = Vector2( 0.594101, 0.792595 )
+points = PoolVector2Array( 640.603, 823.149, 1044.57, 823.149, 1330.72, 608.664, 1330.72, 305.861, 1044.57, 91.3758, 640.603, 91.3758, 354.456, 305.861, 354.456, 608.664, 640.603, 823.149 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+joint_mode = 2
+begin_cap_mode = 2
+end_cap_mode = 2
+antialiased = true

@@ -1,0 +1,272 @@
+[gd_scene load_steps=25 format=2]
+
+[ext_resource path="res://assets/fonts/default.tres" type="DynamicFont" id=1]
+[ext_resource path="res://assets/img/reset.svg" type="Texture" id=2]
+[ext_resource path="res://scenes/title.gd" type="Script" id=3]
+[ext_resource path="res://assets/img/reset_pressed.svg" type="Texture" id=4]
+[ext_resource path="res://assets/img/exit.svg" type="Texture" id=5]
+[ext_resource path="res://assets/img/logo.svg" type="Texture" id=6]
+[ext_resource path="res://assets/img/exit_pressed.svg" type="Texture" id=7]
+[ext_resource path="res://assets/img/settings_pressed.svg" type="Texture" id=8]
+[ext_resource path="res://assets/img/settings.svg" type="Texture" id=9]
+[ext_resource path="res://assets/img/music.svg" type="Texture" id=10]
+[ext_resource path="res://assets/img/music-off.svg" type="Texture" id=11]
+[ext_resource path="res://assets/img/slider_grabber_highlighted.svg" type="Texture" id=12]
+[ext_resource path="res://assets/img/slider_grabber.svg" type="Texture" id=13]
+[ext_resource path="res://assets/img/fx_off.svg" type="Texture" id=14]
+[ext_resource path="res://assets/img/fx.svg" type="Texture" id=15]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0.243137, 0.243137, 0.243137, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+shadow_size = 4
+shadow_offset = Vector2( 4, 4 )
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 11 ) ],
+"loop": false,
+"name": "off",
+"speed": 0.0
+}, {
+"frames": [ ExtResource( 10 ) ],
+"loop": false,
+"name": "on",
+"speed": 0.0
+} ]
+
+[sub_resource type="StyleBoxLine" id=3]
+color = Color( 0.145098, 0.145098, 0.145098, 1 )
+grow_begin = 0.0
+grow_end = 0.0
+thickness = 10
+
+[sub_resource type="StyleBoxLine" id=5]
+color = Color( 0.407843, 0.407843, 0.407843, 1 )
+grow_begin = 0.0
+grow_end = 0.0
+thickness = 10
+
+[sub_resource type="StyleBoxLine" id=4]
+color = Color( 0.407843, 0.407843, 0.407843, 1 )
+grow_begin = 0.0
+grow_end = 0.0
+thickness = 10
+
+[sub_resource type="SpriteFrames" id=9]
+animations = [ {
+"frames": [ ExtResource( 14 ) ],
+"loop": false,
+"name": "off",
+"speed": 0.0
+}, {
+"frames": [ ExtResource( 15 ) ],
+"loop": false,
+"name": "on",
+"speed": 0.0
+} ]
+
+[sub_resource type="StyleBoxFlat" id=8]
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id=6]
+bg_color = Color( 0.0745098, 0.462745, 1, 1 )
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id=7]
+bg_color = Color( 0.145098, 0.145098, 0.145098, 1 )
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[node name="Title" type="Node"]
+script = ExtResource( 3 )
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -131.5
+margin_top = -63.5
+margin_right = 131.5
+margin_bottom = 63.5
+rect_scale = Vector2( 0.5, 0.5 )
+mouse_filter = 2
+texture = ExtResource( 6 )
+
+[node name="ByLabel" type="Label" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -125.0
+margin_top = 51.0
+margin_right = -53.9999
+margin_bottom = 72.0
+custom_fonts/font = ExtResource( 1 )
+text = "by Rado1"
+align = 2
+valign = 1
+
+[node name="PressKeyLabel" type="Label" parent="."]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -82.5
+margin_top = -25.0
+margin_right = 82.5
+custom_fonts/font = ExtResource( 1 )
+text = "press any key to start"
+align = 1
+
+[node name="VersionLabel" type="Label" parent="."]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -36.0
+margin_top = -25.0
+margin_right = -8.0
+custom_fonts/font = ExtResource( 1 )
+text = "v1.0"
+align = 2
+
+[node name="AchievedLevelLabel" type="Label" parent="."]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -186.0
+margin_top = 18.0
+margin_right = -45.0
+margin_bottom = 39.0
+custom_fonts/font = ExtResource( 1 )
+text = "Achieved level: XX"
+align = 2
+valign = 1
+
+[node name="ResetLevelButton" type="TextureButton" parent="."]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -39.9999
+margin_top = 16.0
+margin_right = 16.0001
+margin_bottom = 80.0
+rect_scale = Vector2( 0.4, 0.4 )
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource( 2 )
+texture_pressed = ExtResource( 4 )
+
+[node name="SettingsButton" type="TextureButton" parent="."]
+margin_left = 20.0
+margin_top = 16.0
+margin_right = 84.0
+margin_bottom = 80.0
+rect_scale = Vector2( 0.4, 0.4 )
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource( 9 )
+texture_pressed = ExtResource( 8 )
+
+[node name="ExitButton" type="TextureButton" parent="."]
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_left = 8.0
+margin_top = -48.0
+margin_right = 72.0
+margin_bottom = 16.0
+rect_scale = Vector2( 0.6, 0.6 )
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource( 5 )
+texture_pressed = ExtResource( 7 )
+
+[node name="SettingsDialog" type="PopupDialog" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -130.0
+margin_top = -70.0
+margin_right = 130.0
+margin_bottom = 70.0
+custom_styles/panel = SubResource( 1 )
+popup_exclusive = true
+
+[node name="MusicSprite" type="AnimatedSprite" parent="SettingsDialog"]
+position = Vector2( 28, 30 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 2 )
+animation = "on"
+
+[node name="MusicSlider" type="HSlider" parent="SettingsDialog"]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -80.0
+margin_top = 21.0
+margin_right = 120.0
+margin_bottom = 37.0
+custom_icons/grabber_highlight = ExtResource( 12 )
+custom_icons/grabber = ExtResource( 13 )
+custom_styles/slider = SubResource( 3 )
+custom_styles/grabber_area_highlight = SubResource( 5 )
+custom_styles/grabber_area = SubResource( 4 )
+max_value = 1.0
+step = 0.1
+value = 0.5
+
+[node name="FxSprite" type="AnimatedSprite" parent="SettingsDialog"]
+position = Vector2( 28, 77 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 9 )
+animation = "on"
+
+[node name="FxSlider" type="HSlider" parent="SettingsDialog"]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -80.0
+margin_top = 68.0
+margin_right = 120.0
+margin_bottom = 84.0
+custom_icons/grabber_highlight = ExtResource( 12 )
+custom_icons/grabber = ExtResource( 13 )
+custom_styles/slider = SubResource( 3 )
+custom_styles/grabber_area_highlight = SubResource( 5 )
+custom_styles/grabber_area = SubResource( 4 )
+max_value = 1.0
+step = 0.1
+value = 0.5
+
+[node name="OkButton" type="Button" parent="SettingsDialog"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -50.0
+margin_top = -30.0
+margin_right = 50.0
+margin_bottom = -10.0
+custom_fonts/font = ExtResource( 1 )
+custom_styles/hover = SubResource( 8 )
+custom_styles/pressed = SubResource( 6 )
+custom_styles/normal = SubResource( 7 )
+text = "OK"
+
+[connection signal="pressed" from="ResetLevelButton" to="." method="_on_ResetLevelButton_pressed"]
+[connection signal="pressed" from="SettingsButton" to="." method="_on_SettingsButton_pressed"]
+[connection signal="pressed" from="ExitButton" to="." method="_on_ExitButton_pressed"]
+[connection signal="value_changed" from="SettingsDialog/MusicSlider" to="." method="_on_MusicSlider_value_changed"]
+[connection signal="value_changed" from="SettingsDialog/FxSlider" to="." method="_on_FxSlider_value_changed"]
+[connection signal="pressed" from="SettingsDialog/OkButton" to="." method="_on_OkButton_pressed"]

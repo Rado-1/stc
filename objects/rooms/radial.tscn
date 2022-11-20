@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://objects/rooms/radial.gd" type="Script" id=1]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 500, 300 )
+
+[node name="Radial" type="Node2D"]
+position = Vector2( 500, 300 )
+z_index = -1
+script = ExtResource( 1 )
+
+[node name="Area2D" type="Area2D" parent="."]
+monitoring = false
+monitorable = false
+space_override = 3
+gravity_point = true
+gravity_vec = Vector2( 0, 0 )
+gravity = -98.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+visible = false
+shape = SubResource( 1 )

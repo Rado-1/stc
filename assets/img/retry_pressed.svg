@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Svg Vector Icons : http://www.onlinewebfonts.com/icon -->
+
+<svg
+   version="1.1"
+   x="0px"
+   y="0px"
+   viewBox="0 0 64 63.999996"
+   enable-background="new 0 0 1000 1000"
+   xml:space="preserve"
+   id="svg8"
+   sodipodi:docname="retry_pressed.svg"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   width="64"
+   height="63.999996"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><defs
+   id="defs12" /><sodipodi:namedview
+   id="namedview10"
+   pagecolor="#ffffff"
+   bordercolor="#000000"
+   borderopacity="0.25"
+   inkscape:showpageshadow="2"
+   inkscape:pageopacity="0.0"
+   inkscape:pagecheckerboard="true"
+   inkscape:deskcolor="#d1d1d1"
+   showgrid="true"
+   inkscape:zoom="10.680141"
+   inkscape:cx="15.917393"
+   inkscape:cy="27.293647"
+   inkscape:window-width="1920"
+   inkscape:window-height="1137"
+   inkscape:window-x="3832"
+   inkscape:window-y="113"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="svg8"><inkscape:grid
+     type="xygrid"
+     id="grid462" /></sodipodi:namedview>
+<metadata
+   id="metadata2"> Svg Vector Icons : http://www.onlinewebfonts.com/icon </metadata>
+<path
+   d="m 31.999998,0.99999809 c -17.119592,0 -30.99999991,13.88040791 -30.99999991,30.99999991 0,17.119592 13.88040791,31 30.99999991,31 17.119592,0 31,-13.880408 31,-31 0,-17.119592 -13.880408,-30.99999991 -31,-30.99999991 z M 45.5451,45.064284 c -3.618776,3.618775 -8.426939,5.611632 -13.545102,5.611632 -5.118163,0 -9.926326,-1.992857 -13.545102,-5.611632 -3.618776,-3.618776 -5.611632,-8.42694 -5.611632,-13.545103 0,-5.118163 1.992856,-9.926326 5.611632,-13.545101 3.618776,-3.618776 8.426939,-5.611633 13.545102,-5.611633 V 7.7504062 l 9.591021,7.7626528 -9.591021,7.756326 v -5.592653 c -7.629796,0 -13.836123,6.206327 -13.836123,13.842449 0,7.629796 6.206327,13.842449 13.842449,13.842449 7.629796,0 13.842449,-6.206326 13.842449,-13.842449 h 5.320612 c -0.01265,5.118163 -2.00551,9.926327 -5.624285,13.545103 z"
+   id="path4"
+   style="fill:#1376ff;stroke-width:0.999999;fill-opacity:1" />
+</svg>

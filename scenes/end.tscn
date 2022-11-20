@@ -1,0 +1,143 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://assets/fonts/default.tres" type="DynamicFont" id=1]
+[ext_resource path="res://assets/fonts/Montserrat-Light.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://scenes/end.gd" type="Script" id=3]
+[ext_resource path="res://assets/img/circle_pressed.svg" type="Texture" id=4]
+[ext_resource path="res://assets/img/square_pressed.svg" type="Texture" id=5]
+[ext_resource path="res://assets/img/logo.svg" type="Texture" id=6]
+[ext_resource path="res://assets/img/triangle_pressed.svg" type="Texture" id=7]
+
+[sub_resource type="DynamicFont" id=1]
+size = 48
+use_filter = true
+font_data = ExtResource( 2 )
+
+[sub_resource type="Gradient" id=2]
+offsets = PoolRealArray( 0, 0.307263, 0.988827 )
+colors = PoolColorArray( 1, 1, 1, 0, 1, 1, 1, 0.501961, 1, 1, 1, 0 )
+
+[node name="End" type="Node"]
+script = ExtResource( 3 )
+
+[node name="TextureRect" type="TextureRect" parent="."]
+modulate = Color( 1, 1, 1, 0.156863 )
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -460.0
+margin_top = -268.0
+margin_right = -197.0
+margin_bottom = -141.0
+rect_scale = Vector2( 0.5, 0.5 )
+mouse_filter = 2
+texture = ExtResource( 6 )
+
+[node name="CongratLabel" type="Label" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -198.5
+margin_top = -86.0
+margin_right = 198.5
+margin_bottom = -26.0
+custom_fonts/font = SubResource( 1 )
+text = "Congratulations!"
+align = 1
+valign = 1
+
+[node name="TextLabel" type="Label" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -150.0
+margin_top = -14.5
+margin_right = 150.0
+margin_bottom = 126.5
+custom_fonts/font = ExtResource( 1 )
+text = "You accomplished all levels.
+Thank you for playing the game and looking forward to new versions with more exiting levels.
+
+Rado1"
+valign = 1
+autowrap = true
+
+[node name="PressKeyLabel" type="Label" parent="."]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -90.0
+margin_top = -25.0
+margin_right = 90.0
+custom_fonts/font = ExtResource( 1 )
+text = "press any key to return"
+align = 1
+
+[node name="LinkButton" type="LinkButton" parent="."]
+modulate = Color( 0.25098, 0.717647, 1, 1 )
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -117.5
+margin_top = -133.0
+margin_right = 117.5
+margin_bottom = -112.0
+custom_fonts/font = ExtResource( 1 )
+action_mode = 0
+text = "https://github.com/Rado-1/stc"
+underline = 1
+
+[node name="CPUParticles2D" type="CPUParticles2D" parent="."]
+position = Vector2( 500, 263 )
+amount = 3
+lifetime = 2.0
+local_coords = false
+texture = ExtResource( 4 )
+emission_shape = 2
+emission_rect_extents = Vector2( 200, 1 )
+angular_velocity = 100.0
+angular_velocity_random = 1.0
+angle = 720.0
+angle_random = 1.0
+scale_amount = 0.1
+scale_amount_random = 0.2
+color_ramp = SubResource( 2 )
+
+[node name="CPUParticles2D2" type="CPUParticles2D" parent="."]
+position = Vector2( 500, 263 )
+amount = 3
+lifetime = 2.0
+local_coords = false
+texture = ExtResource( 5 )
+emission_shape = 2
+emission_rect_extents = Vector2( 200, 1 )
+angular_velocity = 100.0
+angular_velocity_random = 1.0
+angle = 720.0
+angle_random = 1.0
+scale_amount = 0.1
+scale_amount_random = 0.2
+color_ramp = SubResource( 2 )
+
+[node name="CPUParticles2D3" type="CPUParticles2D" parent="."]
+position = Vector2( 500, 263 )
+amount = 3
+lifetime = 2.0
+local_coords = false
+texture = ExtResource( 7 )
+emission_shape = 2
+emission_rect_extents = Vector2( 200, 1 )
+angular_velocity = -52.84
+angular_velocity_random = 0.81
+angle = 720.0
+angle_random = 1.0
+scale_amount = 0.1
+scale_amount_random = 0.2
+color_ramp = SubResource( 2 )
+
+[connection signal="pressed" from="LinkButton" to="." method="_on_LinkButton_pressed"]

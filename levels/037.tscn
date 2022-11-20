@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://objects/rooms/octagon_reverse_room.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scripts/level.gd" type="Script" id=2]
+[ext_resource path="res://objects/goals/goal-square.tscn" type="PackedScene" id=3]
+
+[node name="037" type="Node"]
+script = ExtResource( 2 )
+max_squares = 5
+max_triangles = 0
+
+[node name="OctagonReverseRoom" parent="." instance=ExtResource( 1 )]
+
+[node name="Goals" type="Node" parent="."]
+
+[node name="GoalSquare" parent="Goals" instance=ExtResource( 3 )]
+position = Vector2( 380, 420 )
+
+[node name="GoalSquare2" parent="Goals" instance=ExtResource( 3 )]
+position = Vector2( 620, 420 )
+
+[node name="GoalSquare5" parent="Goals" instance=ExtResource( 3 )]
+position = Vector2( 500, 300 )
+
+[node name="GoalSquare3" parent="Goals" instance=ExtResource( 3 )]
+position = Vector2( 380, 180 )
+
+[node name="GoalSquare4" parent="Goals" instance=ExtResource( 3 )]
+position = Vector2( 620, 180 )
