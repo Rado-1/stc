@@ -1,4 +1,4 @@
-![stc](assets\img\logo.svg)
+![stc](assets/img/logo.svg)
 
 **!!! WORK IN PROGRESS !!!**
 
