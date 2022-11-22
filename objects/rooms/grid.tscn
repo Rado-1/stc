@@ -1,9 +1,10 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://objects/rooms/grid.gd" type="Script" id=1]
+[ext_resource path="res://assets/img/gravity_down.svg" type="Texture" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 500, 300 )
+extents = Vector2( 600, 400 )
 
 [node name="Grid" type="Node2D"]
 z_index = -1
@@ -17,3 +18,10 @@ space_override = 3
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 visible = false
 shape = SubResource( 1 )
+
+[node name="GravityDown" type="Sprite" parent="."]
+position = Vector2( 960, 550 )
+scale = Vector2( 0.5, 0.5 )
+z_index = 15
+z_as_relative = false
+texture = ExtResource( 2 )

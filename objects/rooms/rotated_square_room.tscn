@@ -10,7 +10,6 @@
 z_index = 5
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
-visible = false
 polygon = PoolVector2Array( 210, 300, 500, 590, 790, 300, 500, 10, 210, 300, -100, 300, -100, -100, 1100, -100, 1100, 700, -100, 700, -100, 300 )
 
 [node name="Polygon2D" type="Polygon2D" parent="StaticBody2D"]

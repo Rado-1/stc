@@ -6,7 +6,7 @@
 radius = 50.0
 
 [node name="GoalCircle" type="Area2D"]
-z_index = 5
+z_index = 20
 monitorable = false
 script = ExtResource( 1 )
 radius = 50.0

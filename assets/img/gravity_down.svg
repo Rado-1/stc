@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Svg Vector Icons : http://www.onlinewebfonts.com/icon -->
+
+<svg
+   version="1.1"
+   x="0px"
+   y="0px"
+   viewBox="0 0 63.999996 63.999996"
+   enable-background="new 0 0 1000 1000"
+   xml:space="preserve"
+   id="svg322"
+   sodipodi:docname="gravity_down.svg"
+   width="63.999996"
+   height="63.999996"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><defs
+   id="defs326"><linearGradient
+     inkscape:collect="always"
+     id="linearGradient507"><stop
+       style="stop-color:#ffffff;stop-opacity:0;"
+       offset="0"
+       id="stop505" /><stop
+       style="stop-color:#ffffff;stop-opacity:0.5;"
+       offset="1"
+       id="stop503" /></linearGradient><linearGradient
+     inkscape:collect="always"
+     xlink:href="#linearGradient507"
+     id="linearGradient509"
+     x1="32"
+     y1="1"
+     x2="32"
+     y2="63"
+     gradientUnits="userSpaceOnUse" /></defs><sodipodi:namedview
+   id="namedview324"
+   pagecolor="#ffffff"
+   bordercolor="#000000"
+   borderopacity="0.25"
+   inkscape:showpageshadow="2"
+   inkscape:pageopacity="0.0"
+   inkscape:pagecheckerboard="true"
+   inkscape:deskcolor="#d1d1d1"
+   showgrid="true"
+   inkscape:zoom="10.680141"
+   inkscape:cx="30.336679"
+   inkscape:cy="36.188661"
+   inkscape:window-width="1920"
+   inkscape:window-height="1137"
+   inkscape:window-x="-8"
+   inkscape:window-y="-1"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="svg322"><inkscape:grid
+     type="xygrid"
+     id="grid289"
+     empspacing="8" /></sodipodi:namedview>
+<metadata
+   id="metadata316"> Svg Vector Icons : http://www.onlinewebfonts.com/icon </metadata>
+
+<path
+   style="fill:url(#linearGradient509);stroke-width:2;stroke-linecap:round;stroke-linejoin:round;fill-opacity:1"
+   d="M 24,1 V 39 H 8 L 32,63 56,39 H 40 V 1 Z"
+   id="path345"
+   sodipodi:nodetypes="cccccccc" /></svg>

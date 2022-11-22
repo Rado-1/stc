@@ -22,6 +22,7 @@ var _uvs: PoolVector2Array
 func _ready():
 	Audio.element_new()
 	position = get_viewport().get_mouse_position()
+	z_index = 15
 #	can_sleep = false
 
 
@@ -40,6 +41,7 @@ func _process(_delta):
 
 		_editing_update()
 		update()
+
 
 #func _physics_process(_delta):
 #	modulate = Color.webgray if sleeping else Color.white
@@ -66,8 +68,6 @@ func make_matched():
 func _compute_uvs():
 	var pp
 	for p in _points:
-#		ORIG: pp = (Vector2(0.5, 0.5) + (p as Vector2) / UVS_RATIO).rotated(rotation)
-#		SEAMLESS:
 		pp = (position + (p as Vector2).rotated(rotation))/ UVS_RATIO
 		_uvs.push_back(pp)
 

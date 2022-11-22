@@ -3,10 +3,10 @@
 [ext_resource path="res://objects/goals/goal-square.gd" type="Script" id=1]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 50, 50 )
+extents = Vector2( 100, 100 )
 
 [node name="GoalSquare" type="Area2D"]
-z_index = 5
+z_index = 20
 monitorable = false
 script = ExtResource( 1 )
 size = 50.0
