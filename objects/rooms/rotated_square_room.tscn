@@ -1,6 +1,9 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://objects/rooms/grid.tscn" type="PackedScene" id=1]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 400.111, 600 )
 
 [node name="RotatedSquareRoom" type="Node"]
 
@@ -9,10 +12,32 @@
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 z_index = 5
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
-polygon = PoolVector2Array( 210, 300, 500, 590, 790, 300, 500, 10, 210, 300, -100, 300, -100, -100, 1100, -100, 1100, 700, -100, 700, -100, 300 )
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+visible = false
+position = Vector2( 72, -128 )
+rotation = 0.785398
+shape = SubResource( 1 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
+visible = false
+position = Vector2( 930, -125.843 )
+rotation = 2.35619
+shape = SubResource( 1 )
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D"]
+visible = false
+position = Vector2( 71, 727 )
+rotation = 2.35619
+shape = SubResource( 1 )
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="StaticBody2D"]
+visible = false
+position = Vector2( 929, 727 )
+rotation = 0.785398
+shape = SubResource( 1 )
 
 [node name="Polygon2D" type="Polygon2D" parent="StaticBody2D"]
+position = Vector2( 0, 2 )
 color = Color( 0.145098, 0.145098, 0.145098, 1 )
 polygon = PoolVector2Array( 210, 300, 500, 590, 790, 300, 500, 10, 210, 300, -10, 300, -10, -10, 1010, -10, 1010, 610, -10, 610, -10, 300 )
 __meta__ = {
@@ -20,7 +45,7 @@ __meta__ = {
 }
 
 [node name="Line2D" type="Line2D" parent="StaticBody2D"]
-position = Vector2( -0.582822, -62.424 )
+position = Vector2( -0.582822, -60.424 )
 scale = Vector2( 0.594101, 0.792595 )
 points = PoolVector2Array( 842.589, 823.149, 1330.72, 457.263, 842.589, 91.3758, 354.456, 457.263, 842.589, 823.149 )
 width = 1.0
