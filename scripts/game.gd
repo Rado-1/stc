@@ -20,6 +20,8 @@ var is_level_accomplished: bool
 
 
 func _init():
+	randomize()
+
 	Input.use_accumulated_input = true
 
 	# load config

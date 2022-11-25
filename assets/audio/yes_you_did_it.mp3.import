@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/yes_you_did_it.mp3-010f05754ff298cf11d6aa4640764d4f.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/yes_you_did_it.mp3"
+dest_files=[ "res://.import/yes_you_did_it.mp3-010f05754ff298cf11d6aa4640764d4f.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

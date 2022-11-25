@@ -20,6 +20,7 @@ func _process(delta):
 		update()
 
 		if _match_duration >= MATCHING_TIMEOUT:
+			Audio.tick_stop()
 			_matched_current_element.make_matched()
 			Game.goal_accomplished()
 			queue_free()
@@ -28,12 +29,14 @@ func _process(delta):
 			# reset from previous matching
 			_matched_current_element = null
 			_match_duration = MATCHING_NOT_ACTIVE
+			Audio.tick_stop()
 			update()
 
 		for e in _matched_elements:
 			if _is_matching(e):
 				_matched_current_element = e
 				_match_duration = 0
+				Audio.tick_start()
 				break
 
 

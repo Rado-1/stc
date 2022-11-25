@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/well_done.mp3-5c995c1bcebdf8d0a65eb9f7b1f5220e.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/well_done.mp3"
+dest_files=[ "res://.import/well_done.mp3-5c995c1bcebdf8d0a65eb9f7b1f5220e.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

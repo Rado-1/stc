@@ -7,6 +7,7 @@ var _is_settings_open := false
 func _ready():
 	Game.is_scene_just_opening = false
 	_set_achieved_level()
+	Audio.tick_reset()
 	$PressKeyLabel.text = "tap to start" if OS.get_name() == "Android" \
 			else "press any key to start"
 

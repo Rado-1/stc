@@ -3,6 +3,7 @@ extends Node
 
 func _ready():
 	Game.is_scene_just_opening = false
+	Audio.tick_reset()
 	$PressKeyLabel.text = "tap to return" if OS.get_name() == "Android" \
 			else "press any key to return"
 

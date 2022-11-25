@@ -26,6 +26,8 @@ func _ready():
 	Game.is_scene_just_opening = false
 	Game.is_level_accomplished = false
 
+	Audio.tick_reset()
+
 	# add hud
 	_hud = HudScene.instance()
 	add_child(_hud)

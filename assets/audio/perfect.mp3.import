@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/perfect.mp3-44ecb257031aef041cc64ba33091e654.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/perfect.mp3"
+dest_files=[ "res://.import/perfect.mp3-44ecb257031aef041cc64ba33091e654.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

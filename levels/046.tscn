@@ -17,17 +17,14 @@ max_triangles = 0
 [node name="GoalCircle" parent="Goals" instance=ExtResource( 2 )]
 position = Vector2( 565.023, 336.399 )
 rotation = -0.139626
-scale = Vector2( 1, 1 )
 radius = 30.0
 
 [node name="GoalCircle2" parent="Goals" instance=ExtResource( 2 )]
 position = Vector2( 515.649, 232.682 )
 rotation = -0.139626
-scale = Vector2( 1, 1 )
 radius = 20.0
 
 [node name="GoalCircle3" parent="Goals" instance=ExtResource( 2 )]
 position = Vector2( 473.874, 167.22 )
 rotation = -0.139626
-scale = Vector2( 1, 1 )
 radius = 10.0

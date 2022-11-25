@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/wow.mp3-b3dd4d9b90ee343a9e946031e4997811.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/wow.mp3"
+dest_files=[ "res://.import/wow.mp3-b3dd4d9b90ee343a9e946031e4997811.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0
