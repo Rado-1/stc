@@ -1,0 +1,78 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://scripts/level.gd" type="Script" id=1]
+[ext_resource path="res://objects/goals/goal-square.tscn" type="PackedScene" id=2]
+[ext_resource path="res://objects/goals/goal-circle.tscn" type="PackedScene" id=3]
+[ext_resource path="res://objects/goals/goal-triangle.tscn" type="PackedScene" id=4]
+[ext_resource path="res://objects/rooms/standard_room.tscn" type="PackedScene" id=5]
+
+[node name="051" type="Node"]
+script = ExtResource( 1 )
+max_circles = 5
+max_squares = 5
+max_triangles = 8
+
+[node name="StandardRoom" parent="." instance=ExtResource( 5 )]
+
+[node name="Goals" type="Node" parent="."]
+
+[node name="GoalTriangle" parent="Goals" instance=ExtResource( 4 )]
+position = Vector2( 350, 560 )
+
+[node name="GoalTriangle2" parent="Goals" instance=ExtResource( 4 )]
+position = Vector2( 450, 560 )
+
+[node name="GoalTriangle4" parent="Goals" instance=ExtResource( 4 )]
+position = Vector2( 500, 271 )
+size = 90.0
+
+[node name="GoalTriangle3" parent="Goals" instance=ExtResource( 4 )]
+position = Vector2( 550, 560 )
+
+[node name="GoalSquare" parent="Goals" instance=ExtResource( 2 )]
+position = Vector2( 350, 473 )
+size = 30.0
+
+[node name="GoalSquare2" parent="Goals" instance=ExtResource( 2 )]
+position = Vector2( 500, 453 )
+
+[node name="GoalSquare3" parent="Goals" instance=ExtResource( 2 )]
+position = Vector2( 460, 363 )
+size = 40.0
+
+[node name="GoalSquare4" parent="Goals" instance=ExtResource( 2 )]
+position = Vector2( 540, 363 )
+size = 40.0
+
+[node name="GoalCircle" parent="Goals" instance=ExtResource( 3 )]
+position = Vector2( 350, 413 )
+radius = 30.0
+
+[node name="GoalTriangle6" parent="Goals" instance=ExtResource( 4 )]
+position = Vector2( 250, 560 )
+
+[node name="GoalCircle4" parent="Goals" instance=ExtResource( 3 )]
+position = Vector2( 250, 473 )
+radius = 30.0
+
+[node name="GoalTriangle7" parent="Goals" instance=ExtResource( 4 )]
+position = Vector2( 750, 560 )
+
+[node name="GoalCircle5" parent="Goals" instance=ExtResource( 3 )]
+position = Vector2( 750, 473 )
+radius = 30.0
+
+[node name="GoalTriangle5" parent="Goals" instance=ExtResource( 4 )]
+position = Vector2( 650, 560 )
+
+[node name="GoalSquare5" parent="Goals" instance=ExtResource( 2 )]
+position = Vector2( 650, 473 )
+size = 30.0
+
+[node name="GoalCircle3" parent="Goals" instance=ExtResource( 3 )]
+position = Vector2( 650, 413 )
+radius = 30.0
+
+[node name="GoalCircle2" parent="Goals" instance=ExtResource( 3 )]
+position = Vector2( 500, 138 )
+radius = 30.0

@@ -1,22 +1,25 @@
 extends Node
 
 
-const MATCHED_01 = preload("res://assets/audio/nice.mp3")
+const MATCHED_01 = preload("res://assets/audio/ok.mp3")
 const MATCHED_02 = preload("res://assets/audio/awesome.mp3")
 const MATCHED_03 = preload("res://assets/audio/great.mp3")
-const MATCHED_04 = preload("res://assets/audio/keep_working.mp3")
+const MATCHED_04 = preload("res://assets/audio/keep_going.mp3")
 const MATCHED_05 = preload("res://assets/audio/nice_work.mp3")
 const MATCHED_06 = preload("res://assets/audio/perfect.mp3")
 const MATCHED_07 = preload("res://assets/audio/wow.mp3")
 const MATCHED_08 = preload("res://assets/audio/you_did_it.mp3")
-const MATCHED_09 = preload("res://assets/audio/yes.mp3")
-const MATCHED_10 = preload("res://assets/audio/yes_you_did_it.mp3")
-const MATCHED_11 = preload("res://assets/audio/nice_but_some_more_remain.mp3")
+const MATCHED_09 = preload("res://assets/audio/nice.mp3")
+const MATCHED_10 = preload("res://assets/audio/great_go_ahead.mp3")
+const MATCHED_11 = preload("res://assets/audio/yes.mp3")
+const MATCHED_12 = preload("res://assets/audio/super.mp3")
+const MATCHED_13 = preload("res://assets/audio/yes_you_did_it.mp3")
+const MATCHED_14 = preload("res://assets/audio/nice_but_some_more_remain.mp3")
 const _match_streams = [
-		MATCHED_01, MATCHED_02, MATCHED_03, MATCHED_04, MATCHED_05, MATCHED_06,
-		MATCHED_07, MATCHED_08, MATCHED_09, MATCHED_10, MATCHED_11
-]
-const _match_streams_count = 11
+		MATCHED_01, MATCHED_02, MATCHED_03, MATCHED_04, MATCHED_05,
+		MATCHED_06, MATCHED_07, MATCHED_08, MATCHED_09, MATCHED_10,
+		MATCHED_11, MATCHED_12, MATCHED_13, MATCHED_14 ]
+const _match_streams_count = 14
 
 
 onready var _music: AudioStreamPlayer = $MusicPlayer
@@ -52,27 +55,21 @@ func element_done():
 
 func tick_reset():
 	_tick_number = 0
-	call_deferred("_tick_stop")
+	_tick.play()
+	_tick.stream_paused = true
 
 
 func tick_start():
 	_tick_number += 1
-	#print("TICK START", _tick_number)
 	if _tick_number == 1:
-		_tick.play()
+		_tick.stream_paused = false
 
 
 func tick_stop():
 	if _tick_number > 0:
 		_tick_number -= 1
-	#print("TICK STOP", _tick_number)
 	if _tick_number == 0:
-		_tick.playing = false
-		call_deferred("_tick_stop")
-
-
-func _tick_stop():
-	_tick.stop()
+		_tick.stream_paused = true
 
 
 func matched():

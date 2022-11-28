@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/keep_going.mp3-38036c72fbf0d3d039f393cb62fd9efe.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/keep_going.mp3"
+dest_files=[ "res://.import/keep_going.mp3-38036c72fbf0d3d039f393cb62fd9efe.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

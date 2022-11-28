@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/great_go_ahead.mp3-8881d4154b34d31991b00592c57e9d65.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/great_go_ahead.mp3"
+dest_files=[ "res://.import/great_go_ahead.mp3-8881d4154b34d31991b00592c57e9d65.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

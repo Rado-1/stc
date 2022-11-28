@@ -3,7 +3,7 @@
 [ext_resource path="res://objects/goals/goal-triangle.gd" type="Script" id=1]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
-points = PoolVector2Array( 0, -115.47, 100, 57.735, -100, 57.735, 0, -115.47 )
+points = PoolVector2Array( 0, -34.641, 30, 17.3205, -30, 17.3205, 0, -34.641 )
 
 [node name="GoalTriangle" type="Area2D"]
 z_index = 20
