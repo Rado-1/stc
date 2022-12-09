@@ -1,0 +1,213 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://scripts/level.gd" type="Script" id=1]
+[ext_resource path="res://objects/rooms/standard_room.tscn" type="PackedScene" id=2]
+[ext_resource path="res://objects/goals/goal-square.tscn" type="PackedScene" id=3]
+[ext_resource path="res://assets/fonts/outlined.tres" type="DynamicFont" id=4]
+[ext_resource path="res://objects/goals/goal-triangle.tscn" type="PackedScene" id=5]
+[ext_resource path="res://objects/goals/goal-circle.tscn" type="PackedScene" id=6]
+
+[node name="060" type="Node"]
+script = ExtResource( 1 )
+max_squares = 29
+max_triangles = 6
+
+[node name="StandardRoom" parent="." instance=ExtResource( 2 )]
+
+[node name="Goals" type="Node" parent="."]
+
+[node name="GoalSquare2" parent="Goals" instance=ExtResource( 3 )]
+position = Vector2( 440, 550 )
+size = 20.0
+
+[node name="GoalSquare3" parent="Goals" instance=ExtResource( 3 )]
+position = Vector2( 450, 510 )
+size = 20.0
+
+[node name="GoalSquare8" parent="Goals" instance=ExtResource( 3 )]
+position = Vector2( 420, 370 )
+size = 20.0
+
+[node name="GoalSquare10" parent="Goals" instance=ExtResource( 3 )]
+position = Vector2( 580, 370 )
+size = 20.0
+
+[node name="GoalSquare6" parent="Goals" instance=ExtResource( 3 )]
+position = Vector2( 450, 440 )
+
+[node name="GoalSquare7" parent="Goals" instance=ExtResource( 3 )]
+position = Vector2( 550, 440 )
+
+[node name="GoalCircle" parent="Goals" instance=ExtResource( 6 )]
+position = Vector2( 480, 570 )
+radius = 20.0
+
+[node name="GoalCircle2" parent="Goals" instance=ExtResource( 6 )]
+position = Vector2( 450, 580 )
+radius = 10.0
+
+[node name="GoalCircle3" parent="Goals" instance=ExtResource( 6 )]
+position = Vector2( 430, 580 )
+radius = 10.0
+
+[node name="GoalCircle7" parent="Goals" instance=ExtResource( 6 )]
+position = Vector2( 410, 580 )
+radius = 10.0
+
+[node name="GoalSquare4" parent="Goals" instance=ExtResource( 3 )]
+position = Vector2( 560, 550 )
+size = 20.0
+
+[node name="GoalSquare5" parent="Goals" instance=ExtResource( 3 )]
+position = Vector2( 550, 510 )
+size = 20.0
+
+[node name="GoalCircle4" parent="Goals" instance=ExtResource( 6 )]
+position = Vector2( 520, 570 )
+radius = 20.0
+
+[node name="GoalCircle5" parent="Goals" instance=ExtResource( 6 )]
+position = Vector2( 550, 580 )
+radius = 10.0
+
+[node name="GoalCircle6" parent="Goals" instance=ExtResource( 6 )]
+position = Vector2( 570, 580 )
+radius = 10.0
+
+[node name="GoalCircle8" parent="Goals" instance=ExtResource( 6 )]
+position = Vector2( 590, 580 )
+radius = 10.0
+
+[node name="GoalTriangle" parent="Goals" instance=ExtResource( 5 )]
+position = Vector2( 470, 361.5 )
+rotation = -3.14159
+size = 20.0
+
+[node name="GoalTriangle5" parent="Goals" instance=ExtResource( 5 )]
+position = Vector2( 440, 239 )
+size = 20.0
+
+[node name="GoalTriangle6" parent="Goals" instance=ExtResource( 5 )]
+position = Vector2( 560, 239 )
+size = 20.0
+
+[node name="GoalTriangle3" parent="Goals" instance=ExtResource( 5 )]
+position = Vector2( 390, 330 )
+rotation = 0.523599
+size = 20.0
+
+[node name="GoalTriangle4" parent="Goals" instance=ExtResource( 5 )]
+position = Vector2( 610, 330 )
+rotation = -0.523599
+size = 20.0
+
+[node name="GoalTriangle2" parent="Goals" instance=ExtResource( 5 )]
+position = Vector2( 530, 361.5 )
+rotation = -3.14159
+size = 20.0
+
+[node name="GoalSquare9" parent="Goals" instance=ExtResource( 3 )]
+position = Vector2( 420, 330 )
+size = 20.0
+
+[node name="GoalSquare27" parent="Goals" instance=ExtResource( 3 )]
+position = Vector2( 430, 300 )
+size = 10.0
+
+[node name="GoalSquare28" parent="Goals" instance=ExtResource( 3 )]
+position = Vector2( 570, 300 )
+size = 10.0
+
+[node name="GoalSquare29" parent="Goals" instance=ExtResource( 3 )]
+position = Vector2( 440, 270 )
+size = 20.0
+
+[node name="GoalSquare30" parent="Goals" instance=ExtResource( 3 )]
+position = Vector2( 560, 270 )
+size = 20.0
+
+[node name="GoalSquare11" parent="Goals" instance=ExtResource( 3 )]
+position = Vector2( 580, 330 )
+size = 20.0
+
+[node name="GoalSquare12" parent="Goals" instance=ExtResource( 3 )]
+position = Vector2( 450, 340 )
+size = 10.0
+
+[node name="GoalSquare13" parent="Goals" instance=ExtResource( 3 )]
+position = Vector2( 470, 340 )
+size = 10.0
+
+[node name="GoalSquare15" parent="Goals" instance=ExtResource( 3 )]
+position = Vector2( 627, 357 )
+rotation = 1.0472
+size = 20.0
+
+[node name="GoalSquare16" parent="Goals" instance=ExtResource( 3 )]
+position = Vector2( 647, 392 )
+rotation = 1.0472
+size = 20.0
+
+[node name="GoalSquare17" parent="Goals" instance=ExtResource( 3 )]
+position = Vector2( 667, 427 )
+rotation = 1.0472
+size = 20.0
+
+[node name="GoalSquare18" parent="Goals" instance=ExtResource( 3 )]
+position = Vector2( 373, 357 )
+rotation = -1.0472
+size = 20.0
+
+[node name="GoalSquare19" parent="Goals" instance=ExtResource( 3 )]
+position = Vector2( 353, 392 )
+rotation = -1.0472
+size = 20.0
+
+[node name="GoalSquare20" parent="Goals" instance=ExtResource( 3 )]
+position = Vector2( 333, 427 )
+rotation = -1.0472
+size = 20.0
+
+[node name="GoalSquare14" parent="Goals" instance=ExtResource( 3 )]
+position = Vector2( 490, 340 )
+size = 10.0
+
+[node name="GoalSquare24" parent="Goals" instance=ExtResource( 3 )]
+position = Vector2( 500, 320 )
+size = 10.0
+
+[node name="GoalSquare25" parent="Goals" instance=ExtResource( 3 )]
+position = Vector2( 520, 290 )
+size = 20.0
+
+[node name="GoalSquare26" parent="Goals" instance=ExtResource( 3 )]
+position = Vector2( 480, 290 )
+size = 20.0
+
+[node name="GoalSquare21" parent="Goals" instance=ExtResource( 3 )]
+position = Vector2( 510, 340 )
+size = 10.0
+
+[node name="GoalSquare22" parent="Goals" instance=ExtResource( 3 )]
+position = Vector2( 530, 340 )
+size = 10.0
+
+[node name="GoalSquare23" parent="Goals" instance=ExtResource( 3 )]
+position = Vector2( 550, 340 )
+size = 10.0
+
+[node name="Label" type="Label" parent="."]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = 270.0
+margin_top = -410.0
+margin_right = 465.0
+margin_bottom = -317.0
+rect_rotation = 44.4
+custom_fonts/font = ExtResource( 4 )
+text = "Your brain is on vacation
+And far away is this goal
+You wanna say to Rado
+Thanks a lot for this troll..."
