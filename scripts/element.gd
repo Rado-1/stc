@@ -69,7 +69,7 @@ func _compute_uvs():
 	var pp
 	for p in _points:
 		pp = (position + (p as Vector2).rotated(rotation))/ UVS_RATIO
-		_uvs.push_back(pp)
+		_uvs.append(pp)
 
 
 # callbacks implemented in subclasses

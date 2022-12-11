@@ -18,7 +18,7 @@ func _compute_points():
 	_points = PoolVector2Array()
 
 	for i in range(POINTS_COUNT):
-		_points.push_back(Vector2(size_vector_length, 0).rotated(i * POINTS_ANGLE_DELTA))
+		_points.append(Vector2(size_vector_length, 0).rotated(i * POINTS_ANGLE_DELTA))
 
 
 func _draw():

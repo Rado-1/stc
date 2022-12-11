@@ -12,10 +12,10 @@ var _points: PoolVector2Array
 
 
 func _init():
-	_points.push_back(Vector2.ZERO)
-	_points.push_back(Vector2.ZERO)
-	_points.push_back(Vector2.ZERO)
-	_points.push_back(Vector2.ZERO)
+	_points.append(Vector2.ZERO)
+	_points.append(Vector2.ZERO)
+	_points.append(Vector2.ZERO)
+	_points.append(Vector2.ZERO)
 
 
 func _set_size(value: float):

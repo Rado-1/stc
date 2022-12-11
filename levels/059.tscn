@@ -19,31 +19,26 @@ max_triangles = 4
 [node name="GoalSquare2" parent="Goals" instance=ExtResource( 5 )]
 position = Vector2( 500, 300 )
 rotation = 0.785398
-scale = Vector2( 1, 1 )
 size = 80.0
 
 [node name="GoalTriangle" parent="Goals" instance=ExtResource( 4 )]
 position = Vector2( 411, 211 )
 rotation = -0.785398
-scale = Vector2( 1, 1 )
 size = 80.0
 
 [node name="GoalTriangle2" parent="Goals" instance=ExtResource( 4 )]
 position = Vector2( 589, 211 )
 rotation = 0.785398
-scale = Vector2( 1, 1 )
 size = 80.0
 
 [node name="GoalTriangle3" parent="Goals" instance=ExtResource( 4 )]
 position = Vector2( 589, 389 )
 rotation = 2.35619
-scale = Vector2( 1, 1 )
 size = 80.0
 
 [node name="GoalTriangle4" parent="Goals" instance=ExtResource( 4 )]
 position = Vector2( 411, 389 )
 rotation = -2.35619
-scale = Vector2( 1, 1 )
 size = 80.0
 
 [node name="GoalCircle7" parent="Goals" instance=ExtResource( 3 )]

@@ -1,0 +1,42 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://scripts/level.gd" type="Script" id=1]
+[ext_resource path="res://objects/goals/goal-triangle.tscn" type="PackedScene" id=2]
+[ext_resource path="res://objects/rooms/standard_room.tscn" type="PackedScene" id=3]
+
+[node name="062" type="Node"]
+script = ExtResource( 1 )
+max_circles = 0
+max_squares = 0
+max_triangles = 6
+
+[node name="StandardRoom" parent="." instance=ExtResource( 3 )]
+
+[node name="Goals" type="Node" parent="."]
+
+[node name="GoalTriangle" parent="Goals" instance=ExtResource( 2 )]
+position = Vector2( 410, 532 )
+size = 100.0
+
+[node name="GoalTriangle2" parent="Goals" instance=ExtResource( 2 )]
+position = Vector2( 510, 474 )
+rotation = 3.14159
+size = 100.0
+
+[node name="GoalTriangle3" parent="Goals" instance=ExtResource( 2 )]
+position = Vector2( 470, 382 )
+size = 60.0
+
+[node name="GoalTriangle4" parent="Goals" instance=ExtResource( 2 )]
+position = Vector2( 530, 347 )
+rotation = 3.14159
+size = 60.0
+
+[node name="GoalTriangle5" parent="Goals" instance=ExtResource( 2 )]
+position = Vector2( 510, 289 )
+size = 40.0
+
+[node name="GoalTriangle6" parent="Goals" instance=ExtResource( 2 )]
+position = Vector2( 550, 266 )
+rotation = 3.14159
+size = 40.0

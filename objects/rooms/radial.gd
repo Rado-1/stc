@@ -5,6 +5,7 @@ extends Node2D
 const BEAM_ANGLE = TAU / 48.0
 const BEAM_2_DELTA = TAU / 96.0
 
+
 func _draw():
 	# draw circles
 	for i in range(0, 310, 10):

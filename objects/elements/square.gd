@@ -36,10 +36,10 @@ func _get_mass():
 
 func _compute_points():
 	_points = PoolVector2Array()
-	_points.push_back(_side_length_vector)
-	_points.push_back(_side_length_vector * Vector2(1.0, -1.0))
-	_points.push_back(_side_length_vector * -1.0)
-	_points.push_back(_side_length_vector * Vector2(-1.0, 1.0))
+	_points.append(_side_length_vector)
+	_points.append(_side_length_vector * Vector2(1.0, -1.0))
+	_points.append(_side_length_vector * -1.0)
+	_points.append(_side_length_vector * Vector2(-1.0, 1.0))
 
 
 func _draw():

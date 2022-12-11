@@ -1,8 +1,13 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://scripts/level.gd" type="Script" id=1]
 [ext_resource path="res://objects/goals/goal-circle.tscn" type="PackedScene" id=2]
+[ext_resource path="res://assets/fonts/outlined.tres" type="DynamicFont" id=3]
 [ext_resource path="res://objects/rooms/standard_room.tscn" type="PackedScene" id=5]
+
+[sub_resource type="Curve" id=1]
+max_value = 3.0
+_data = [ Vector2( 0, 3 ), 0.0, -3.0, 0, 1, Vector2( 1, 0 ), -3.0, 0.0, 1, 0 ]
 
 [node name="020" type="Node"]
 script = ExtResource( 1 )
@@ -30,3 +35,24 @@ radius = 20.0
 
 [node name="GoalCircle3" parent="Goals" instance=ExtResource( 2 )]
 position = Vector2( 380, 310 )
+
+[node name="Line2D2" type="Line2D" parent="."]
+position = Vector2( -10, 11 )
+points = PoolVector2Array( 570, 150, 550, 80 )
+width = 1.0
+width_curve = SubResource( 1 )
+default_color = Color( 1, 1, 1, 1 )
+antialiased = true
+
+[node name="Label2" type="Label" parent="."]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = 20.0
+margin_top = -439.0
+margin_right = 126.0
+margin_bottom = -394.0
+custom_fonts/font = ExtResource( 3 )
+text = "some shapes
+are disabled"

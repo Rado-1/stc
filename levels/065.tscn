@@ -4,27 +4,35 @@
 [ext_resource path="res://objects/rooms/inclined_square_room.tscn" type="PackedScene" id=2]
 [ext_resource path="res://objects/goals/goal-square.tscn" type="PackedScene" id=3]
 
-[node name="017" type="Node"]
+[node name="065" type="Node"]
 script = ExtResource( 1 )
+max_circles = 0
+max_squares = 5
+max_triangles = 0
 
 [node name="InclinedSquareRoom" parent="." instance=ExtResource( 2 )]
 
 [node name="Goals" type="Node" parent="."]
 
 [node name="GoalSquare" parent="Goals" instance=ExtResource( 3 )]
-position = Vector2( 500, 380 )
+position = Vector2( 500, 463 )
 rotation = 0.785398
-size = 80.0
+size = 90.0
 
 [node name="GoalSquare2" parent="Goals" instance=ExtResource( 3 )]
-position = Vector2( 410, 240 )
+position = Vector2( 500, 246 )
+size = 90.0
+
+[node name="GoalSquare3" parent="Goals" instance=ExtResource( 3 )]
+position = Vector2( 500, 85 )
 rotation = 0.785398
 
 [node name="GoalSquare4" parent="Goals" instance=ExtResource( 3 )]
-position = Vector2( 590, 240 )
+position = Vector2( 310, 302 )
 rotation = 0.785398
+size = 70.0
 
-[node name="GoalSquare3" parent="Goals" instance=ExtResource( 3 )]
-position = Vector2( 500, 130 )
-rotation = 0.785397
-size = 30.0
+[node name="GoalSquare5" parent="Goals" instance=ExtResource( 3 )]
+position = Vector2( 690, 302 )
+rotation = 0.785398
+size = 70.0
