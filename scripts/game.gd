@@ -17,6 +17,7 @@ var _hud: Hud
 var _config = ConfigFile.new()
 var is_scene_just_opening := false # scene opening lock
 var is_level_accomplished: bool
+var is_title_first_time := true
 
 
 func _init():

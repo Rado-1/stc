@@ -25,14 +25,11 @@ size = 20.0
 [node name="GoalSquare2" parent="Goals" instance=ExtResource( 3 )]
 position = Vector2( 500, 520 )
 rotation = 0.785398
-scale = Vector2( 1, 1 )
 
 [node name="GoalSquare3" parent="Goals" instance=ExtResource( 3 )]
 position = Vector2( 500, 340 )
 rotation = 0.785398
-scale = Vector2( 1, 1 )
 
 [node name="GoalSquare5" parent="Goals" instance=ExtResource( 3 )]
 position = Vector2( 500, 160 )
 rotation = 0.785398
-scale = Vector2( 1, 1 )

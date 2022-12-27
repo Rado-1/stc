@@ -2,6 +2,10 @@ class_name Hud
 extends CanvasLayer
 
 
+#const MODULATE_GLOW = Color8(510,0,0,255)
+#const MODULATE_NORMAL = Color.white
+
+
 func _ready():
 	$LevelLabel.text = "Level  %d" %  Game.current_level
 
@@ -65,6 +69,18 @@ func _on_RectangleButton_pressed():
 func _on_TriangleButton_pressed():
 	Audio.button_click()
 	Game.selected_shape = Game.TRIANGLE
+
+
+#func _set_button_glow():
+#	$ButtonContainer/CircleButton.self_modulate = \
+#			MODULATE_GLOW if Game.selected_shape == Game.CIRCLE \
+#			else MODULATE_NORMAL
+#	$ButtonContainer/SquareButton.self_modulate = \
+#			MODULATE_GLOW if Game.selected_shape == Game.SQUARE \
+#			else MODULATE_NORMAL
+#	$ButtonContainer/TriangleButton.self_modulate = \
+#			MODULATE_GLOW if Game.selected_shape == Game.TRIANGLE \
+#			else MODULATE_NORMAL
 
 
 func _on_BackButton_pressed():

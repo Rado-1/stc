@@ -8,15 +8,19 @@ func _ready():
 	Game.is_scene_just_opening = false
 	_set_achieved_level()
 	Audio.tick_reset()
-	$PressKeyLabel.text = "tap to start" if OS.get_name() == "Android" \
+	$LabelsAndButtons/PressKeyLabel.text = "tap to start" if OS.get_name() == "Android" \
 			else "press any key to start"
+
+	if Game.is_title_first_time:
+		$AnimationPlayer.play("appear")
+		Game.is_title_first_time = false
 
 
 func _set_achieved_level():
 	if  Game.current_level > 0:
-		$AchievedLevelLabel.text = "Achieved level: %d" % Game.current_level
+		$LabelsAndButtons/AchievedLevelLabel.text = "Achieved level: %d" % Game.current_level
 	else:
-		$AchievedLevelLabel.text = ""
+		$LabelsAndButtons/AchievedLevelLabel.text = ""
 
 
 func _unhandled_input(event):
