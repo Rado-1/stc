@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://assets/fonts/default.tres" type="DynamicFont" id=1]
 [ext_resource path="res://assets/fonts/Montserrat-Light.ttf" type="DynamicFontData" id=2]
@@ -7,6 +7,7 @@
 [ext_resource path="res://assets/img/square_pressed.svg" type="Texture" id=5]
 [ext_resource path="res://assets/img/logo.svg" type="Texture" id=6]
 [ext_resource path="res://assets/img/triangle_pressed.svg" type="Texture" id=7]
+[ext_resource path="res://default_env.tres" type="Environment" id=8]
 
 [sub_resource type="DynamicFont" id=1]
 size = 48
@@ -39,7 +40,7 @@ color_ramp = SubResource( 3 )
 script = ExtResource( 3 )
 
 [node name="TextureRect" type="TextureRect" parent="."]
-modulate = Color( 1, 1, 1, 0.156863 )
+modulate = Color( 1, 1, 1, 0.160784 )
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -53,6 +54,7 @@ mouse_filter = 2
 texture = ExtResource( 6 )
 
 [node name="CongratLabel" type="Label" parent="."]
+modulate = Color( 1.8, 1.8, 1.8, 1 )
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -134,5 +136,8 @@ lifetime = 2.0
 local_coords = false
 process_material = SubResource( 4 )
 texture = ExtResource( 7 )
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = ExtResource( 8 )
 
 [connection signal="pressed" from="LinkButton" to="." method="_on_LinkButton_pressed"]

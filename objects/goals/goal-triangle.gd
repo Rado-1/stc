@@ -35,7 +35,6 @@ func _ready():
 func _draw():
 	draw_colored_polygon(_points,  Color(0,0,0,0.7))
 	draw_polyline(_points, Color.webgray, 1.0, true)
-	_draw_countdown()
 
 
 func _on_body_entered(body: Element):

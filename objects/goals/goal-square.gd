@@ -23,7 +23,6 @@ func _ready():
 func _draw():
 	draw_rect(Rect2(-_size_vector, _size_vector * 2.0), Color(0,0,0,0.7), true)
 	draw_rect(Rect2(-_size_vector, _size_vector * 2.0), Color.webgray, false, 1.0, true)
-	_draw_countdown()
 
 
 func _on_body_entered(body: Element):

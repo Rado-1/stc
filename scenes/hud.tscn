@@ -87,14 +87,16 @@ anchor_left = 0.5
 anchor_right = 0.5
 margin_left = -100.0
 margin_top = 17.0
-margin_right = 676.0
+margin_right = 700.0
 margin_bottom = 273.0
+grow_horizontal = 2
 rect_scale = Vector2( 0.25, 0.25 )
 mouse_filter = 2
 alignment = 1
 
 [node name="CircleButton" type="TextureButton" parent="ButtonContainer"]
-margin_right = 256.0
+margin_left = 12.0
+margin_right = 268.0
 margin_bottom = 256.0
 mouse_default_cursor_shape = 2
 toggle_mode = true
@@ -120,8 +122,8 @@ align = 1
 valign = 1
 
 [node name="SquareButton" type="TextureButton" parent="ButtonContainer"]
-margin_left = 260.0
-margin_right = 516.0
+margin_left = 272.0
+margin_right = 528.0
 margin_bottom = 256.0
 mouse_default_cursor_shape = 2
 toggle_mode = true
@@ -147,8 +149,8 @@ align = 1
 valign = 1
 
 [node name="TriangleButton" type="TextureButton" parent="ButtonContainer"]
-margin_left = 520.0
-margin_right = 776.0
+margin_left = 532.0
+margin_right = 788.0
 margin_bottom = 256.0
 mouse_default_cursor_shape = 2
 toggle_mode = true

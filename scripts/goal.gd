@@ -9,15 +9,21 @@ const MATCHING_NOT_ACTIVE = -1.0
 const MATCHING_TIMEOUT = 4.0
 
 
+onready var _countdown: GoalCountdown = $GoalCountdown
 var _matched_elements: Array
 var _matched_current_element: Element = null
 var _match_duration = MATCHING_NOT_ACTIVE
 
 
+func _ready():
+	_countdown.rotation = -rotation
+
+
 func _process(delta):
 	if _matched_current_element != null && _is_matching(_matched_current_element):
 		_match_duration += delta
-		update()
+		_countdown.visible = true
+		_countdown.set_progress(_match_duration / MATCHING_TIMEOUT)
 
 		if _match_duration >= MATCHING_TIMEOUT:
 			Audio.tick_stop()
@@ -30,7 +36,7 @@ func _process(delta):
 			_matched_current_element = null
 			_match_duration = MATCHING_NOT_ACTIVE
 			Audio.tick_stop()
-			update()
+			_countdown.visible = false
 
 		for e in _matched_elements:
 			if _is_matching(e):
@@ -38,14 +44,6 @@ func _process(delta):
 				_match_duration = 0
 				Audio.tick_start()
 				break
-
-
-func _draw_countdown():
-	if _match_duration != MATCHING_NOT_ACTIVE:
-		draw_arc(Vector2.ZERO, 10.0, 0.0, TAU, 32, Color.beige, 5.0, true)
-		draw_arc(Vector2.ZERO, 10.0, -rotation,
-				TAU * _match_duration / MATCHING_TIMEOUT - rotation,
-				32, Color.crimson, 3.0, true)
 
 
 func _add_matched_element(element: Element):

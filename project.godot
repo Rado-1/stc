@@ -9,6 +9,21 @@
 config_version=4
 
 _global_script_classes=[ {
+"base": "Line2D",
+"class": "AntialiasedLine2D",
+"language": "GDScript",
+"path": "res://addons/antialiased_line2d/antialiased_line2d.gd"
+}, {
+"base": "Polygon2D",
+"class": "AntialiasedPolygon2D",
+"language": "GDScript",
+"path": "res://addons/antialiased_line2d/antialiased_polygon2d.gd"
+}, {
+"base": "Polygon2D",
+"class": "AntialiasedRegularPolygon2D",
+"language": "GDScript",
+"path": "res://addons/antialiased_line2d/antialiased_regular_polygon2d.gd"
+}, {
 "base": "Element",
 "class": "Circle",
 "language": "GDScript",
@@ -28,6 +43,11 @@ _global_script_classes=[ {
 "class": "Goal",
 "language": "GDScript",
 "path": "res://scripts/goal.gd"
+}, {
+"base": "Node2D",
+"class": "GoalCountdown",
+"language": "GDScript",
+"path": "res://objects/goals/goal-countdown.gd"
 }, {
 "base": "CanvasLayer",
 "class": "Hud",
@@ -50,10 +70,14 @@ _global_script_classes=[ {
 "path": "res://objects/elements/triangle.gd"
 } ]
 _global_script_class_icons={
+"AntialiasedLine2D": "res://addons/antialiased_line2d/antialiased_line2d.svg",
+"AntialiasedPolygon2D": "res://addons/antialiased_line2d/antialiased_polygon2d.svg",
+"AntialiasedRegularPolygon2D": "res://addons/antialiased_line2d/antialiased_regular_polygon2d.svg",
 "Circle": "",
 "Element": "",
 "GitAPI": "",
 "Goal": "",
+"GoalCountdown": "",
 "Hud": "",
 "Level": "",
 "Square": "",
@@ -76,10 +100,12 @@ config/windows_native_icon="res://assets/img/icon.ico"
 
 Audio="*res://scenes/audio.tscn"
 Game="*res://scripts/game.gd"
+AntialiasedLine2DTexture="*res://addons/antialiased_line2d/texture.gd"
 
 [display]
 
 window/size/width=1000
+window/dpi/allow_hidpi=true
 window/stretch/mode="2d"
 window/stretch/aspect="keep"
 
@@ -87,6 +113,10 @@ window/stretch/aspect="keep"
 
 version_control_autoload_on_startup=true
 version_control_plugin_name="GitAPI"
+
+[editor_plugins]
+
+enabled=PoolStringArray( "res://addons/antialiased_line2d/plugin.cfg" )
 
 [input]
 
@@ -114,3 +144,4 @@ common/enable_object_picking=false
 quality/driver/fallback_to_gles2=true
 2d/options/use_nvidia_rect_flicker_workaround=true
 environment/default_clear_color=Color( 0.145098, 0.145098, 0.145098, 1 )
+environment/default_environment="res://default_env.tres"

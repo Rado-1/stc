@@ -17,7 +17,6 @@ func _ready():
 func _draw():
 	draw_circle(Vector2.ZERO, radius, Color(0,0,0,0.7))
 	draw_arc(Vector2.ZERO, radius, 0, TAU, 20 + radius / 3, Color.webgray, 1.0, true)
-	_draw_countdown()
 
 
 func _on_body_entered(body: Element):
