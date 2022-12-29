@@ -1,4 +1,4 @@
-[gd_scene load_steps=32 format=2]
+[gd_scene load_steps=33 format=2]
 
 [ext_resource path="res://assets/fonts/default.tres" type="DynamicFont" id=1]
 [ext_resource path="res://assets/img/reset.svg" type="Texture" id=2]
@@ -18,7 +18,6 @@
 [ext_resource path="res://assets/img/square_pressed.svg" type="Texture" id=16]
 [ext_resource path="res://assets/img/triangle_pressed.svg" type="Texture" id=17]
 [ext_resource path="res://assets/img/circle_pressed.svg" type="Texture" id=18]
-[ext_resource path="res://default_env.tres" type="Environment" id=19]
 
 [sub_resource type="StyleBoxFlat" id=1]
 bg_color = Color( 0.243137, 0.243137, 0.243137, 1 )
@@ -84,6 +83,7 @@ animations = [ {
 } ]
 
 [sub_resource type="StyleBoxFlat" id=8]
+bg_color = Color( 0.243137, 0.243137, 0.243137, 1 )
 corner_radius_top_left = 8
 corner_radius_top_right = 8
 corner_radius_bottom_right = 8
@@ -98,6 +98,16 @@ corner_radius_bottom_left = 8
 
 [sub_resource type="StyleBoxFlat" id=7]
 bg_color = Color( 0.145098, 0.145098, 0.145098, 1 )
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id=14]
+bg_color = Color( 0.243137, 0.243137, 0.243137, 1 )
+
+[sub_resource type="StyleBoxFlat" id=13]
+bg_color = Color( 0.243137, 0.243137, 0.243137, 1 )
 corner_radius_top_left = 8
 corner_radius_top_right = 8
 corner_radius_bottom_right = 8
@@ -154,7 +164,7 @@ tracks/3/keys = {
 "values": [ Color( 1, 1, 1, 1 ) ]
 }
 tracks/4/type = "value"
-tracks/4/path = NodePath("Logo:scale")
+tracks/4/path = NodePath("Logo/Square:scale")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/imported = false
@@ -163,12 +173,36 @@ tracks/4/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ Vector2( 1, 1 ) ]
+"values": [ Vector2( 0.43, 0.43 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("Logo/Triangle:scale")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 0.51, 0.51 ) ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("Logo/Circle:scale")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 0.465, 0.465 ) ]
 }
 
 [sub_resource type="Animation" id=12]
 resource_name = "appear"
-length = 1.5
+length = 1.3
 tracks/0/type = "value"
 tracks/0/path = NodePath("LabelsAndButtons:modulate")
 tracks/0/interp = 1
@@ -176,7 +210,7 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 1, 1.5 ),
+"times": PoolRealArray( 0, 0.8, 1.3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
 "values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
@@ -188,10 +222,10 @@ tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0, 0.2, 0.6 ),
-"transitions": PoolRealArray( 1e+06, 2, 1 ),
+"times": PoolRealArray( 0, 0.6 ),
+"transitions": PoolRealArray( 2, 1 ),
 "update": 0,
-"values": [ Color( 0, 0, 0, 0 ), Color( 2, 2, 2, 1 ), Color( 1, 1, 1, 1 ) ]
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
 }
 tracks/2/type = "value"
 tracks/2/path = NodePath("Logo/Triangle:modulate")
@@ -200,10 +234,10 @@ tracks/2/loop_wrap = true
 tracks/2/imported = false
 tracks/2/enabled = true
 tracks/2/keys = {
-"times": PoolRealArray( 0, 0.4, 0.8 ),
-"transitions": PoolRealArray( 1e+06, 2, 1 ),
+"times": PoolRealArray( 0, 0.2, 0.8 ),
+"transitions": PoolRealArray( 1, 2, 1 ),
 "update": 0,
-"values": [ Color( 0, 0, 0, 0 ), Color( 2, 2, 2, 1 ), Color( 1, 1, 1, 1 ) ]
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
 }
 tracks/3/type = "value"
 tracks/3/path = NodePath("Logo/Circle:modulate")
@@ -212,22 +246,46 @@ tracks/3/loop_wrap = true
 tracks/3/imported = false
 tracks/3/enabled = true
 tracks/3/keys = {
-"times": PoolRealArray( 0, 0.6, 1 ),
-"transitions": PoolRealArray( 1e+06, 2, 1 ),
+"times": PoolRealArray( 0, 0.4, 1 ),
+"transitions": PoolRealArray( 1, 2, 1 ),
 "update": 0,
-"values": [ Color( 0, 0, 0, 0 ), Color( 2, 2, 2, 1 ), Color( 1, 1, 1, 1 ) ]
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
 }
 tracks/4/type = "value"
-tracks/4/path = NodePath("Logo:scale")
+tracks/4/path = NodePath("Logo/Square:scale")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/imported = false
 tracks/4/enabled = true
 tracks/4/keys = {
-"times": PoolRealArray( 0, 0.2, 1.1 ),
-"transitions": PoolRealArray( 1, 0.353553, 1 ),
+"times": PoolRealArray( 0, 0.6 ),
+"transitions": PoolRealArray( 0.3, 1 ),
 "update": 0,
-"values": [ Vector2( 2.5, 2.5 ), Vector2( 2.5, 2.5 ), Vector2( 1, 1 ) ]
+"values": [ Vector2( 1.72, 1.72 ), Vector2( 0.43, 0.43 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("Logo/Triangle:scale")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0.2, 0.8 ),
+"transitions": PoolRealArray( 0.3, 1 ),
+"update": 0,
+"values": [ Vector2( 2.04, 2.04 ), Vector2( 0.51, 0.51 ) ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("Logo/Circle:scale")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0.4, 1 ),
+"transitions": PoolRealArray( 0.3, 1 ),
+"update": 0,
+"values": [ Vector2( 1.86, 1.86 ), Vector2( 0.465, 0.465 ) ]
 }
 
 [node name="Title" type="Node"]
@@ -322,6 +380,24 @@ margin_bottom = 63.5
 rect_scale = Vector2( 0.5, 0.5 )
 mouse_filter = 2
 texture = ExtResource( 6 )
+
+[node name="Logo" type="Node2D" parent="."]
+position = Vector2( 500, 300 )
+
+[node name="Square" type="Sprite" parent="Logo"]
+position = Vector2( -90, -2 )
+scale = Vector2( 0.43, 0.43 )
+texture = ExtResource( 16 )
+
+[node name="Triangle" type="Sprite" parent="Logo"]
+position = Vector2( -3, -10 )
+scale = Vector2( 0.51, 0.51 )
+texture = ExtResource( 17 )
+
+[node name="Circle" type="Sprite" parent="Logo"]
+position = Vector2( 75, 4 )
+scale = Vector2( 0.465, 0.465 )
+texture = ExtResource( 18 )
 
 [node name="SettingsDialog" type="PopupDialog" parent="."]
 anchor_left = 0.5
@@ -419,31 +495,37 @@ custom_styles/pressed = SubResource( 6 )
 custom_styles/normal = SubResource( 7 )
 text = "OK"
 
-[node name="Logo" type="Node2D" parent="."]
-position = Vector2( 500, 300 )
+[node name="SpecialButton" type="Button" parent="SettingsDialog"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = 101.0
+margin_top = -233.0
+margin_right = 121.0
+margin_bottom = -210.0
+focus_mode = 0
+custom_fonts/font = ExtResource( 1 )
+custom_styles/hover = SubResource( 8 )
+custom_styles/pressed = SubResource( 14 )
+custom_styles/normal = SubResource( 13 )
+enabled_focus_mode = 0
+text = "º"
+align = 2
 
-[node name="Square" type="Sprite" parent="Logo"]
-position = Vector2( -90, -2 )
-scale = Vector2( 0.43, 0.43 )
-texture = ExtResource( 16 )
-
-[node name="Triangle" type="Sprite" parent="Logo"]
-position = Vector2( -3, -10 )
-scale = Vector2( 0.51, 0.51 )
-texture = ExtResource( 17 )
-
-[node name="Circle" type="Sprite" parent="Logo"]
-position = Vector2( 75, 4 )
-scale = Vector2( 0.465, 0.465 )
-texture = ExtResource( 18 )
+[node name="LevelSpinBox" type="SpinBox" parent="SettingsDialog"]
+visible = false
+margin_left = 90.0
+margin_top = 140.0
+margin_right = 170.0
+margin_bottom = 164.0
+max_value = 73.0
+prefix = "Level"
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 playback_speed = 0.5
 anims/RESET = SubResource( 11 )
 anims/appear = SubResource( 12 )
-
-[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
-environment = ExtResource( 19 )
 
 [connection signal="pressed" from="LabelsAndButtons/SettingsButton" to="." method="_on_SettingsButton_pressed"]
 [connection signal="pressed" from="LabelsAndButtons/ExitButton" to="." method="_on_ExitButton_pressed"]
@@ -451,3 +533,5 @@ environment = ExtResource( 19 )
 [connection signal="value_changed" from="SettingsDialog/FxSlider" to="." method="_on_FxSlider_value_changed"]
 [connection signal="pressed" from="SettingsDialog/ResetLevelButton" to="." method="_on_ResetLevelButton_pressed"]
 [connection signal="pressed" from="SettingsDialog/OkButton" to="." method="_on_OkButton_pressed"]
+[connection signal="pressed" from="SettingsDialog/SpecialButton" to="." method="_on_SpecialButton_pressed"]
+[connection signal="value_changed" from="SettingsDialog/LevelSpinBox" to="." method="_on_LevelSpinBox_value_changed"]

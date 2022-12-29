@@ -2,10 +2,6 @@ class_name Hud
 extends CanvasLayer
 
 
-#const MODULATE_GLOW = Color8(510,0,0,255)
-#const MODULATE_NORMAL = Color.white
-
-
 func _ready():
 	$LevelLabel.text = "Level  %d" %  Game.current_level
 

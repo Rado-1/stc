@@ -73,4 +73,19 @@ func _on_OkButton_pressed():
 	_is_settings_open = false
 	Game.save_audio_settings()
 	Audio.button_click()
+	$SettingsDialog/ResetLevelButton.visible = true
+	$SettingsDialog/LevelSpinBox.visible = false
 	$SettingsDialog.hide()
+
+
+func _on_SpecialButton_pressed():
+	Audio.button_click()
+	$SettingsDialog/ResetLevelButton.visible = false
+	$SettingsDialog/LevelSpinBox.visible = true
+	$SettingsDialog/LevelSpinBox.value = Game.current_level
+
+
+func _on_LevelSpinBox_value_changed(value):
+	Game.current_level = value
+	Game.save_current_level()
+	_set_achieved_level()

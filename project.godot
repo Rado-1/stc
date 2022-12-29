@@ -141,8 +141,9 @@ common/enable_object_picking=false
 
 [rendering]
 
+quality/driver/driver_name="GLES2"
 quality/driver/fallback_to_gles2=true
 2d/options/use_nvidia_rect_flicker_workaround=true
 vram_compression/import_etc=true
+2d/options/use_software_skinning=false
 environment/default_clear_color=Color( 0.145098, 0.145098, 0.145098, 1 )
-environment/default_environment="res://default_env.tres"

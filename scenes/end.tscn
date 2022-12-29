@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://assets/fonts/default.tres" type="DynamicFont" id=1]
 [ext_resource path="res://assets/fonts/Montserrat-Light.ttf" type="DynamicFontData" id=2]
@@ -7,7 +7,6 @@
 [ext_resource path="res://assets/img/square_pressed.svg" type="Texture" id=5]
 [ext_resource path="res://assets/img/logo.svg" type="Texture" id=6]
 [ext_resource path="res://assets/img/triangle_pressed.svg" type="Texture" id=7]
-[ext_resource path="res://default_env.tres" type="Environment" id=8]
 
 [sub_resource type="DynamicFont" id=1]
 size = 48
@@ -15,32 +14,14 @@ use_filter = true
 font_data = ExtResource( 2 )
 
 [sub_resource type="Gradient" id=2]
-offsets = PoolRealArray( 0, 0.339695, 1 )
+offsets = PoolRealArray( 0, 0.307263, 0.988827 )
 colors = PoolColorArray( 1, 1, 1, 0, 1, 1, 1, 0.501961, 1, 1, 1, 0 )
-
-[sub_resource type="GradientTexture" id=3]
-gradient = SubResource( 2 )
-
-[sub_resource type="ParticlesMaterial" id=4]
-emission_shape = 2
-emission_box_extents = Vector3( 200, 1, 1 )
-flag_disable_z = true
-gravity = Vector3( 0, 98, 0 )
-angular_velocity = 100.0
-angular_velocity_random = 1.0
-orbit_velocity = 0.0
-orbit_velocity_random = 0.0
-angle = 720.0
-angle_random = 1.0
-scale = 0.02
-scale_random = 0.06
-color_ramp = SubResource( 3 )
 
 [node name="End" type="Node"]
 script = ExtResource( 3 )
 
 [node name="TextureRect" type="TextureRect" parent="."]
-modulate = Color( 1, 1, 1, 0.160784 )
+modulate = Color( 1, 1, 1, 0.156863 )
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -54,7 +35,6 @@ mouse_filter = 2
 texture = ExtResource( 6 )
 
 [node name="CongratLabel" type="Label" parent="."]
-modulate = Color( 1.8, 1.8, 1.8, 1 )
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -112,32 +92,52 @@ action_mode = 0
 text = "https://github.com/Rado-1/stc"
 underline = 1
 
-[node name="Particles2D" type="Particles2D" parent="."]
+[node name="CPUParticles2D" type="CPUParticles2D" parent="."]
 position = Vector2( 500, 263 )
 amount = 3
 lifetime = 2.0
-randomness = 0.5
 local_coords = false
-process_material = SubResource( 4 )
 texture = ExtResource( 4 )
+emission_shape = 2
+emission_rect_extents = Vector2( 200, 1 )
+angular_velocity = 100.0
+angular_velocity_random = 1.0
+angle = 720.0
+angle_random = 1.0
+scale_amount = 0.02
+scale_amount_random = 0.05
+color_ramp = SubResource( 2 )
 
-[node name="Particles2D2" type="Particles2D" parent="."]
+[node name="CPUParticles2D2" type="CPUParticles2D" parent="."]
 position = Vector2( 500, 263 )
 amount = 3
 lifetime = 2.0
 local_coords = false
-process_material = SubResource( 4 )
 texture = ExtResource( 5 )
+emission_shape = 2
+emission_rect_extents = Vector2( 200, 1 )
+angular_velocity = 100.0
+angular_velocity_random = 1.0
+angle = 720.0
+angle_random = 1.0
+scale_amount = 0.02
+scale_amount_random = 0.05
+color_ramp = SubResource( 2 )
 
-[node name="Particles2D3" type="Particles2D" parent="."]
+[node name="CPUParticles2D3" type="CPUParticles2D" parent="."]
 position = Vector2( 500, 263 )
 amount = 3
 lifetime = 2.0
 local_coords = false
-process_material = SubResource( 4 )
 texture = ExtResource( 7 )
-
-[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
-environment = ExtResource( 8 )
+emission_shape = 2
+emission_rect_extents = Vector2( 200, 1 )
+angular_velocity = -52.84
+angular_velocity_random = 0.81
+angle = 720.0
+angle_random = 1.0
+scale_amount = 0.02
+scale_amount_random = 0.05
+color_ramp = SubResource( 2 )
 
 [connection signal="pressed" from="LinkButton" to="." method="_on_LinkButton_pressed"]
