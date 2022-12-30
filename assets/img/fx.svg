@@ -7,7 +7,7 @@
    sodipodi:docname="fx.svg"
    width="64"
    height="64"
-   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -28,12 +28,12 @@
      inkscape:deskcolor="#d1d1d1"
      showgrid="true"
      inkscape:zoom="9.8333333"
-     inkscape:cx="27.661017"
-     inkscape:cy="40.728814"
+     inkscape:cx="20.59322"
+     inkscape:cy="40.830509"
      inkscape:window-width="1920"
      inkscape:window-height="1137"
      inkscape:window-x="-8"
-     inkscape:window-y="-1"
+     inkscape:window-y="-8"
      inkscape:window-maximized="1"
      inkscape:current-layer="Layer_1">
     <inkscape:grid
@@ -43,10 +43,10 @@
   <title
      id="title420">volume-mute</title>
   <path
-     d="M 20.139008,17.089889 H 35.022663 L 47.335345,4.6839296 c 0.910891,-0.9119054 2.388814,-0.9119054 3.299707,0 0.445048,0.4309647 0.695515,1.0245101 0.693753,1.644023 v 0 51.3028434 c 0.0294,2.122194 -2.561024,3.177135 -4.022609,1.638194 L 35.13926,49.358212 H 20.139008 c -4.120507,-0.0096 -7.458446,-3.347555 -7.468061,-7.468062 V 24.557951 c 0.0097,-4.120507 3.347554,-7.458445 7.468061,-7.468062 z"
+     d="M 20.139008,17.089889 H 35.022663 L 47.335345,4.6839296 c 0.910891,-0.9119054 2.388814,-0.9119054 3.299707,0 0.445048,0.4309647 0.695515,1.0245101 0.693753,1.644023 v 0 51.3028434 c 0.0294,2.122194 -2.561024,3.177135 -4.022609,1.638194 L 35,47 H 19.999748 c -4.120507,-0.0096 -7.458446,-3.347555 -7.468061,-7.468062 l 0.13926,-14.973987 c 0.0097,-4.120507 3.347554,-7.458445 7.468061,-7.468062 z"
      id="path422"
      sodipodi:nodetypes="ccccscccccccc"
-     style="stroke-width:1;fill:#ffffff" />
+     style="fill:#ffffff;stroke-width:1" />
   <metadata
      id="metadata593">
     <rdf:RDF>

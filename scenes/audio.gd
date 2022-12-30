@@ -45,6 +45,11 @@ func button_click():
 	_button_click.play()
 
 
+func button_click_yieldable():
+	_button_click.play()
+	return _button_click
+
+
 func element_new():
 	_element_new.play()
 

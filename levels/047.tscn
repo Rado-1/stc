@@ -100,14 +100,14 @@ size = 40.0
 position = Vector2( 300, 230 )
 size = 40.0
 
-[node name="GoalTriangle" parent="." instance=ExtResource( 4 )]
+[node name="GoalTriangle" parent="Goals" instance=ExtResource( 4 )]
 position = Vector2( 420, 464 )
 size = 80.0
 
-[node name="GoalTriangle2" parent="." instance=ExtResource( 4 )]
+[node name="GoalTriangle2" parent="Goals" instance=ExtResource( 4 )]
 position = Vector2( 580, 464 )
 size = 80.0
 
-[node name="GoalTriangle3" parent="." instance=ExtResource( 4 )]
+[node name="GoalTriangle3" parent="Goals" instance=ExtResource( 4 )]
 position = Vector2( 500, 324 )
 size = 80.0

@@ -22,8 +22,9 @@ var is_title_first_time := true
 
 func _init():
 	randomize()
-
 	Input.use_accumulated_input = true
+	# is flickering
+	#OS.window_maximized = true
 
 	# load config
 	_config.load(CONFIG_FILE)

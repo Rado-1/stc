@@ -1,4 +1,4 @@
-[gd_scene load_steps=33 format=2]
+[gd_scene load_steps=36 format=2]
 
 [ext_resource path="res://assets/fonts/default.tres" type="DynamicFont" id=1]
 [ext_resource path="res://assets/img/reset.svg" type="Texture" id=2]
@@ -18,6 +18,8 @@
 [ext_resource path="res://assets/img/square_pressed.svg" type="Texture" id=16]
 [ext_resource path="res://assets/img/triangle_pressed.svg" type="Texture" id=17]
 [ext_resource path="res://assets/img/circle_pressed.svg" type="Texture" id=18]
+[ext_resource path="res://scenes/default-env.tres" type="Environment" id=19]
+[ext_resource path="res://assets/img/level.svg" type="Texture" id=20]
 
 [sub_resource type="StyleBoxFlat" id=1]
 bg_color = Color( 0.243137, 0.243137, 0.243137, 1 )
@@ -38,19 +40,6 @@ size = 24
 use_filter = true
 font_data = ExtResource( 4 )
 
-[sub_resource type="SpriteFrames" id=2]
-animations = [ {
-"frames": [ ExtResource( 11 ) ],
-"loop": false,
-"name": "off",
-"speed": 0.0
-}, {
-"frames": [ ExtResource( 10 ) ],
-"loop": false,
-"name": "on",
-"speed": 0.0
-} ]
-
 [sub_resource type="StyleBoxLine" id=3]
 color = Color( 0.145098, 0.145098, 0.145098, 1 )
 grow_begin = 0.0
@@ -69,6 +58,19 @@ grow_begin = 0.0
 grow_end = 0.0
 thickness = 10
 
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 11 ) ],
+"loop": false,
+"name": "off",
+"speed": 0.0
+}, {
+"frames": [ ExtResource( 10 ) ],
+"loop": false,
+"name": "on",
+"speed": 0.0
+} ]
+
 [sub_resource type="SpriteFrames" id=9]
 animations = [ {
 "frames": [ ExtResource( 14 ) ],
@@ -83,7 +85,7 @@ animations = [ {
 } ]
 
 [sub_resource type="StyleBoxFlat" id=8]
-bg_color = Color( 0.243137, 0.243137, 0.243137, 1 )
+bg_color = Color( 0.313726, 0.313726, 0.313726, 1 )
 corner_radius_top_left = 8
 corner_radius_top_right = 8
 corner_radius_bottom_right = 8
@@ -98,6 +100,13 @@ corner_radius_bottom_left = 8
 
 [sub_resource type="StyleBoxFlat" id=7]
 bg_color = Color( 0.145098, 0.145098, 0.145098, 1 )
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id=15]
+bg_color = Color( 0.243137, 0.243137, 0.243137, 1 )
 corner_radius_top_left = 8
 corner_radius_top_right = 8
 corner_radius_bottom_right = 8
@@ -352,6 +361,7 @@ margin_right = 84.0
 margin_bottom = 80.0
 rect_scale = Vector2( 0.4, 0.4 )
 mouse_default_cursor_shape = 2
+shortcut_in_tooltip = false
 texture_normal = ExtResource( 9 )
 texture_pressed = ExtResource( 8 )
 
@@ -364,6 +374,7 @@ margin_right = 72.0
 margin_bottom = 616.0
 rect_scale = Vector2( 0.6, 0.6 )
 mouse_default_cursor_shape = 2
+shortcut_in_tooltip = false
 texture_normal = ExtResource( 5 )
 texture_pressed = ExtResource( 7 )
 
@@ -400,6 +411,7 @@ scale = Vector2( 0.465, 0.465 )
 texture = ExtResource( 18 )
 
 [node name="SettingsDialog" type="PopupDialog" parent="."]
+visible = true
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -421,12 +433,6 @@ margin_bottom = 38.0
 custom_fonts/font = SubResource( 10 )
 text = "Settings"
 
-[node name="MusicSprite" type="AnimatedSprite" parent="SettingsDialog"]
-position = Vector2( 28, 62 )
-scale = Vector2( 0.5, 0.5 )
-frames = SubResource( 2 )
-animation = "on"
-
 [node name="MusicSlider" type="HSlider" parent="SettingsDialog"]
 anchor_left = 0.5
 anchor_right = 0.5
@@ -443,10 +449,10 @@ max_value = 1.0
 step = 0.1
 value = 0.5
 
-[node name="FxSprite" type="AnimatedSprite" parent="SettingsDialog"]
-position = Vector2( 28, 109 )
+[node name="MusicSprite" type="AnimatedSprite" parent="SettingsDialog/MusicSlider"]
+position = Vector2( -22, 9 )
 scale = Vector2( 0.5, 0.5 )
-frames = SubResource( 9 )
+frames = SubResource( 2 )
 animation = "on"
 
 [node name="FxSlider" type="HSlider" parent="SettingsDialog"]
@@ -456,6 +462,7 @@ margin_left = -80.0
 margin_top = 100.0
 margin_right = 120.0
 margin_bottom = 116.0
+rect_pivot_offset = Vector2( 30, 8 )
 custom_icons/grabber_highlight = ExtResource( 12 )
 custom_icons/grabber = ExtResource( 13 )
 custom_styles/slider = SubResource( 3 )
@@ -464,6 +471,12 @@ custom_styles/grabber_area = SubResource( 4 )
 max_value = 1.0
 step = 0.1
 value = 0.5
+
+[node name="FxSprite" type="AnimatedSprite" parent="SettingsDialog/FxSlider"]
+position = Vector2( -22, 9 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 9 )
+animation = "on"
 
 [node name="ResetLevelButton" type="Button" parent="SettingsDialog"]
 anchor_left = 0.5
@@ -476,6 +489,7 @@ custom_fonts/font = ExtResource( 1 )
 custom_styles/hover = SubResource( 8 )
 custom_styles/pressed = SubResource( 6 )
 custom_styles/normal = SubResource( 7 )
+shortcut_in_tooltip = false
 text = "Reset achieved level  "
 icon = ExtResource( 2 )
 expand_icon = true
@@ -493,6 +507,7 @@ custom_fonts/font = ExtResource( 1 )
 custom_styles/hover = SubResource( 8 )
 custom_styles/pressed = SubResource( 6 )
 custom_styles/normal = SubResource( 7 )
+shortcut_in_tooltip = false
 text = "OK"
 
 [node name="SpecialButton" type="Button" parent="SettingsDialog"]
@@ -506,26 +521,43 @@ margin_right = 121.0
 margin_bottom = -210.0
 focus_mode = 0
 custom_fonts/font = ExtResource( 1 )
-custom_styles/hover = SubResource( 8 )
+custom_styles/hover = SubResource( 15 )
 custom_styles/pressed = SubResource( 14 )
 custom_styles/normal = SubResource( 13 )
 enabled_focus_mode = 0
 text = "º"
 align = 2
 
-[node name="LevelSpinBox" type="SpinBox" parent="SettingsDialog"]
+[node name="LevelSlider" type="HSlider" parent="SettingsDialog"]
 visible = false
-margin_left = 90.0
-margin_top = 140.0
-margin_right = 170.0
-margin_bottom = 164.0
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -80.0
+margin_top = 147.0
+margin_right = 120.0
+margin_bottom = 163.0
+rect_pivot_offset = Vector2( 30, 8 )
+custom_icons/grabber_highlight = ExtResource( 12 )
+custom_icons/grabber = ExtResource( 13 )
+custom_styles/slider = SubResource( 3 )
+custom_styles/grabber_area_highlight = SubResource( 5 )
+custom_styles/grabber_area = SubResource( 4 )
 max_value = 73.0
-prefix = "Level"
+value = 1.0
+rounded = true
+
+[node name="LevelSprite" type="Sprite" parent="SettingsDialog/LevelSlider"]
+position = Vector2( -22, 5 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 20 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 playback_speed = 0.5
 anims/RESET = SubResource( 11 )
 anims/appear = SubResource( 12 )
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = ExtResource( 19 )
 
 [connection signal="pressed" from="LabelsAndButtons/SettingsButton" to="." method="_on_SettingsButton_pressed"]
 [connection signal="pressed" from="LabelsAndButtons/ExitButton" to="." method="_on_ExitButton_pressed"]
@@ -534,4 +566,4 @@ anims/appear = SubResource( 12 )
 [connection signal="pressed" from="SettingsDialog/ResetLevelButton" to="." method="_on_ResetLevelButton_pressed"]
 [connection signal="pressed" from="SettingsDialog/OkButton" to="." method="_on_OkButton_pressed"]
 [connection signal="pressed" from="SettingsDialog/SpecialButton" to="." method="_on_SpecialButton_pressed"]
-[connection signal="value_changed" from="SettingsDialog/LevelSpinBox" to="." method="_on_LevelSpinBox_value_changed"]
+[connection signal="value_changed" from="SettingsDialog/LevelSlider" to="." method="_on_LevelSlider_value_changed"]

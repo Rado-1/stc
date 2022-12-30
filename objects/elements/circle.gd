@@ -26,4 +26,4 @@ func _draw():
 		draw_colored_polygon(_points, Color.white, _uvs, _texture)
 	else:
 		draw_circle(Vector2.ZERO, size_vector_length,
-				Color.webgray if _is_matched else Color.lightcoral)
+				Color.webgray if _is_matched else Color(0.9, 0.2, 0.2, 1))

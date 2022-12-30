@@ -39,4 +39,4 @@ func _draw():
 	if _is_matched:
 		draw_colored_polygon(_points, Color.white, _uvs, _texture)
 	else:
-		draw_colored_polygon(_points, Color.lightgreen)
+		draw_colored_polygon(_points,  Color( 0.4, 0.9, 0.1, 1))

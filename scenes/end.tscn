@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://assets/fonts/default.tres" type="DynamicFont" id=1]
 [ext_resource path="res://assets/fonts/Montserrat-Light.ttf" type="DynamicFontData" id=2]
@@ -7,6 +7,7 @@
 [ext_resource path="res://assets/img/square_pressed.svg" type="Texture" id=5]
 [ext_resource path="res://assets/img/logo.svg" type="Texture" id=6]
 [ext_resource path="res://assets/img/triangle_pressed.svg" type="Texture" id=7]
+[ext_resource path="res://scenes/default-env.tres" type="Environment" id=8]
 
 [sub_resource type="DynamicFont" id=1]
 size = 48
@@ -139,5 +140,8 @@ angle_random = 1.0
 scale_amount = 0.02
 scale_amount_random = 0.05
 color_ramp = SubResource( 2 )
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = ExtResource( 8 )
 
 [connection signal="pressed" from="LinkButton" to="." method="_on_LinkButton_pressed"]

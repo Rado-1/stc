@@ -32,34 +32,35 @@ func _unhandled_input(event):
 	elif Input.is_action_just_pressed("ui_accept") && _is_settings_open:
 		_on_OkButton_pressed()
 	elif event.is_pressed() && !_is_settings_open:
-		_is_settings_open = true # hack to filter multiple taps on Android
 		Audio.button_click()
+		_is_settings_open = true # hack to filter multiple taps on Android
 		Game.goto_next_level()
 
 
 func _on_ExitButton_pressed():
+	yield(Audio.button_click_yieldable(), "finished")
 	get_tree().quit()
 
 
 func _on_SettingsButton_pressed():
-	_is_settings_open = true
 	Audio.button_click()
+	_is_settings_open = true
 	$SettingsDialog.popup()
 	$SettingsDialog/MusicSlider.value = Audio.music_volume
-	$SettingsDialog/MusicSprite.animation = "off" if Audio.music_volume < 0.01 else "on"
+	$SettingsDialog/MusicSlider/MusicSprite.animation = "off" if Audio.music_volume < 0.01 else "on"
 	$SettingsDialog/FxSlider.value = Audio.fx_volume
-	$SettingsDialog/FxSprite.animation = "off" if Audio.fx_volume < 0.01 else "on"
+	$SettingsDialog/FxSlider/FxSprite.animation = "off" if Audio.fx_volume < 0.01 else "on"
 
 
 func _on_MusicSlider_value_changed(value):
 	Audio.set_volumes(value, -1)
-	$SettingsDialog/MusicSprite.animation = "off" if value < 0.01 else "on"
+	$SettingsDialog/MusicSlider/MusicSprite.animation = "off" if value < 0.01 else "on"
 
 
 func _on_FxSlider_value_changed(value):
 	Audio.set_volumes(-1, value)
 	Audio.button_click()
-	$SettingsDialog/FxSprite.animation = "off" if value < 0.01 else "on"
+	$SettingsDialog/FxSlider/FxSprite.animation = "off" if value < 0.01 else "on"
 
 
 func _on_ResetLevelButton_pressed():
@@ -70,22 +71,22 @@ func _on_ResetLevelButton_pressed():
 
 
 func _on_OkButton_pressed():
+	Audio.button_click()
 	_is_settings_open = false
 	Game.save_audio_settings()
-	Audio.button_click()
 	$SettingsDialog/ResetLevelButton.visible = true
-	$SettingsDialog/LevelSpinBox.visible = false
+	$SettingsDialog/LevelSlider.visible = false
 	$SettingsDialog.hide()
 
 
 func _on_SpecialButton_pressed():
 	Audio.button_click()
 	$SettingsDialog/ResetLevelButton.visible = false
-	$SettingsDialog/LevelSpinBox.visible = true
-	$SettingsDialog/LevelSpinBox.value = Game.current_level
+	$SettingsDialog/LevelSlider.value = Game.current_level
+	$SettingsDialog/LevelSlider.visible = true
 
 
-func _on_LevelSpinBox_value_changed(value):
+func _on_LevelSlider_value_changed(value):
 	Game.current_level = value
 	Game.save_current_level()
 	_set_achieved_level()

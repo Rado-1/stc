@@ -49,7 +49,7 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://objects/elements/square.gd"
 }, {
-"base": "Reference",
+"base": "Element",
 "class": "Triangle",
 "language": "GDScript",
 "path": "res://objects/elements/triangle.gd"
