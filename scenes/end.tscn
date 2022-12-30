@@ -7,7 +7,7 @@
 [ext_resource path="res://assets/img/square_pressed.svg" type="Texture" id=5]
 [ext_resource path="res://assets/img/logo.svg" type="Texture" id=6]
 [ext_resource path="res://assets/img/triangle_pressed.svg" type="Texture" id=7]
-[ext_resource path="res://scenes/default-env.tres" type="Environment" id=8]
+[ext_resource path="res://default_env.tres" type="Environment" id=8]
 
 [sub_resource type="DynamicFont" id=1]
 size = 48

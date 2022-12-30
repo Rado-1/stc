@@ -32,7 +32,7 @@ _global_script_classes=[ {
 "base": "Node2D",
 "class": "GoalCountdown",
 "language": "GDScript",
-"path": "res://objects/goals/goal-countdown.gd"
+"path": "res://objects/goals/goal_countdown.gd"
 }, {
 "base": "CanvasLayer",
 "class": "Hud",
@@ -82,6 +82,7 @@ config/windows_native_icon="res://assets/img/icon.ico"
 
 Audio="*res://scenes/audio.tscn"
 Game="*res://scripts/game.gd"
+SceneTransition="*res://scenes/scene_transition.tscn"
 
 [display]
 

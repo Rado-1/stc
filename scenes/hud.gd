@@ -83,13 +83,13 @@ func _on_BackButton_pressed():
 	Audio.button_click()
 	Game.current_level -= 1
 	# warning-ignore:return_value_discarded
-	get_tree().change_scene("res://scenes/title.tscn")
+	SceneTransition.change_scene("res://scenes/title.tscn")
 
 
 func _on_RetryButton_pressed():
 	Audio.button_click()
 	# warning-ignore:return_value_discarded
-	get_tree().reload_current_scene()
+	SceneTransition.reload_current_scene()
 
 
 func _on_NextLevelButton_pressed():

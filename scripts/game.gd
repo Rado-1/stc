@@ -57,12 +57,10 @@ func goto_next_level():
 	var level_file = "res://levels/%03d.tscn" % current_level
 
 	if ResourceLoader.exists(level_file):
-		# warning-ignore:return_value_discarded
-		get_tree().change_scene(level_file)
+		SceneTransition.change_scene(level_file)
 	else:
 		current_level -= 1
-		# warning-ignore:return_value_discarded
-		get_tree().change_scene("res://scenes/end.tscn")
+		SceneTransition.change_scene("res://scenes/end.tscn")
 
 
 func set_hud(hud):

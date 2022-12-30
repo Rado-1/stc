@@ -88,8 +88,8 @@ func _unhandled_input(_event):
 
 	elif Input.is_action_just_pressed("retry"):
 		# warning-ignore:return_value_discarded
-		get_tree().reload_current_scene()
+		SceneTransition.reload_current_scene()
 
 	elif Input.is_action_just_pressed("ui_cancel"):
 		# warning-ignore:return_value_discarded
-		get_tree().change_scene("res://scenes/title.tscn")
+		SceneTransition.change_scene("res://scenes/title.tscn")

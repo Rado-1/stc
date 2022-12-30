@@ -14,7 +14,7 @@ func _unhandled_input(event):
 		get_tree().quit()
 	elif event.is_pressed():
 		# warning-ignore:return_value_discarded
-		get_tree().change_scene("res://scenes/title.tscn")
+		SceneTransition.change_scene("res://scenes/title.tscn")
 
 
 func _on_LinkButton_pressed():
