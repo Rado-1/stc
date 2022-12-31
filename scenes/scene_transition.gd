@@ -1,17 +1,16 @@
 extends CanvasLayer
 
 
-const ANIMATION = ["fade",  "swipe_left", "scale_out", "shrink_right",
-		"scale_in", "shrink_down", "scale_out_rotate", "shrink_up",
-		"swipe_down", "shrink_vert", "scale_in_rotate_back", "swipe_right",
-		"scale_out_rotate_back", "shrink_left", "swipe_up", "shrink_horiz",
-		"scale_in_rotate"]
+const ANIMATION = ["fade", "left_to_right", "holes", "center_to",
+		"bottom_to_top", "stripes_horiz", "diag_top_left", "dots",
+		"right_to_left", "diag_bottom_left", "center_from", "top_to_bottom",
+		"stripes_vert", "diag_bottom_left", "squares", "diag_bottom_right",
+		"spiral"]
 const ANIMATION_NUM = 17
 
 
-onready var _anim = $AnimationPlayer
-onready var _scr_sprite = $SpriteContainer/ScrSprite
-onready var _rect = $ColorRect
+onready var _anim_player = $AnimationPlayer
+onready var _rect = $TextureRect
 var _last_animation := 0
 
 
@@ -32,13 +31,14 @@ func reload_current_scene():
 
 
 func _animate():
-	print(ANIMATION[_last_animation])
-	_anim.play(ANIMATION[_last_animation])
-	yield(_anim, "animation_finished")
-	_anim.play("RESET")
-	yield(_anim, "animation_finished")
+	#print(ANIMATION[_last_animation])
+	_rect.visible = true
+	_anim_player.play(ANIMATION[_last_animation])
+	yield(_anim_player, "animation_finished")
+	_rect.visible = false
+	(_rect.material as ShaderMaterial).set_shader_param("smooth_size", 0.05)
 	_rect.mouse_filter = Control.MOUSE_FILTER_IGNORE
-	_last_animation = (_last_animation + 1 + randi() % 5) % ANIMATION_NUM
+	_last_animation = (_last_animation + 1 + randi() % 2) % ANIMATION_NUM
 
 
 func _bake_viewport_to_sprite():
@@ -46,7 +46,4 @@ func _bake_viewport_to_sprite():
 	img.flip_y()
 	var scr = ImageTexture.new()
 	scr.create_from_image(img)
-	var scale = 1000.0 / get_viewport().size.x
-	_scr_sprite.texture = scr
-	_scr_sprite.scale.x = scale
-	_scr_sprite.scale.y = scale
+	_rect.texture = scr
