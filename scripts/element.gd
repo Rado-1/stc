@@ -5,7 +5,7 @@ extends RigidBody2D
 
 const _texture = preload("res://assets/img/goal_texture.png")
 const DENSITY = 0.01
-const MIN_MASS = 0.01
+const MIN_MASS = 1.5
 const UVS_RATIO = 200.0
 
 
@@ -53,7 +53,7 @@ func _unhandled_input(_event):
 		set_process(false)
 		mode = RigidBody2D.MODE_RIGID
 		var m = log(_get_mass()) # to eliminate too weighty objedts
-		mass = m if m > 0.0 else MIN_MASS
+		mass = max(m, MIN_MASS)
 		Audio.element_done()
 
 

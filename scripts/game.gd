@@ -10,6 +10,7 @@ const MUSIC_VOLUME_KEY = "music_volume"
 const FX_VOLUME_KEY = "fx_volume"
 
 
+var _cursor_hand = preload("res://assets/img/cursor_hand.png")
 var selected_shape
 var current_level: int
 var _goal_count: int
@@ -21,8 +22,10 @@ var is_title_first_time := true
 
 
 func _init():
+	# general settings
 	randomize()
 	Input.use_accumulated_input = true
+	Input.set_custom_mouse_cursor(_cursor_hand, Input.CURSOR_POINTING_HAND, Vector2(26, 3))
 	# is flickering
 	#OS.window_maximized = true
 

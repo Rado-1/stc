@@ -3,7 +3,7 @@ extends CanvasLayer
 
 const ANIMATION = ["fade", "left_to_right", "holes", "center_to",
 		"bottom_to_top", "stripes_horiz", "diag_top_left", "dots",
-		"right_to_left", "diag_bottom_left", "center_from", "top_to_bottom",
+		"right_to_left", "diag_top_right", "center_from", "top_to_bottom",
 		"stripes_vert", "diag_bottom_left", "squares", "diag_bottom_right",
 		"spiral"]
 const ANIMATION_NUM = 17
