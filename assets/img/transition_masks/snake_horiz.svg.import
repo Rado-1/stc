@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/whole.svg-e60f328a3858dfd1d337ccd4d8058405.stex"
+path="res://.import/snake_horiz.svg-976f3221fe598cf5bb7445fe8a42aea0.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/img/transition_masks/whole.svg"
-dest_files=[ "res://.import/whole.svg-e60f328a3858dfd1d337ccd4d8058405.stex" ]
+source_file="res://assets/img/transition_masks/snake_horiz.svg"
+dest_files=[ "res://.import/snake_horiz.svg-976f3221fe598cf5bb7445fe8a42aea0.stex" ]
 
 [params]
 
