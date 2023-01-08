@@ -4,6 +4,7 @@ extends RigidBody2D
 
 
 const _texture = preload("res://assets/img/goal_texture.png")
+const ElementGoalAchieve = preload("res://objects/elements/element_goal_achieve.tscn")
 const DENSITY = 0.01
 const MIN_MASS = 1.5
 const UVS_RATIO = 200.0
@@ -63,6 +64,11 @@ func make_matched():
 	_compute_points()
 	_compute_uvs()
 	update()
+
+	# instantiate goal achieve animation
+	var goal_achieve: ElementGoalAchieve = ElementGoalAchieve.instance()
+	goal_achieve.init(_points, _uvs)
+	add_child(goal_achieve)
 
 
 func _compute_uvs():
