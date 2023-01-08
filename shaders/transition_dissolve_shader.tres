@@ -12,5 +12,6 @@ void fragment() {
 	COLOR = texture(TEXTURE, UV);
 	float value = texture(mask, UV).r;
 	float alpha = smoothstep(cutoff, cutoff + smooth_size, value * (1.0 - smooth_size) + smooth_size);
+	if (alpha >= 0.3 && alpha <= 0.7) COLOR = vec4(0.8,0.4,0.4,1.8);
 	COLOR.a *= alpha;
 }"

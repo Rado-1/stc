@@ -26,10 +26,10 @@
      inkscape:document-units="px"
      showgrid="true"
      inkscape:zoom="0.84096521"
-     inkscape:cx="412.62111"
-     inkscape:cy="285.98092"
+     inkscape:cx="264.57694"
+     inkscape:cy="287.17002"
      inkscape:window-width="1920"
-     inkscape:window-height="1137"
+     inkscape:window-height="1129"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
@@ -74,8 +74,7 @@
        y1="-79.375"
        x2="0"
        y2="-79.375"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="scale(1,0.16666667)" />
+       gradientUnits="userSpaceOnUse" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient16209"
@@ -98,30 +97,10 @@
        y2="-79.375" />
     <linearGradient
        inkscape:collect="always"
-       xlink:href="#linearGradient354"
-       id="linearGradient16217"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(1,0,0,0.16666667,5.458576e-6,-52.916668)"
-       x1="-264.58334"
-       y1="-79.375"
-       x2="0"
-       y2="-79.375" />
-    <linearGradient
-       inkscape:collect="always"
        xlink:href="#linearGradient16209"
        id="linearGradient16223"
        gradientUnits="userSpaceOnUse"
        gradientTransform="matrix(1,0,0,0.16666667,-1.612349e-6,-132.29166)"
-       x1="-264.58334"
-       y1="-79.375"
-       x2="0"
-       y2="-79.375" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient354"
-       id="linearGradient16225"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(1,0,0,0.16666667,-7.070925e-6,-105.83333)"
        x1="-264.58334"
        y1="-79.375"
        x2="0"
@@ -132,14 +111,14 @@
      inkscape:groupmode="layer"
      id="layer1">
     <rect
-       style="fill:url(#linearGradient15449);fill-opacity:1;stroke:none;stroke-width:0.216031;stroke-linecap:round;stroke-linejoin:round"
+       style="fill:url(#linearGradient15449);fill-opacity:1;stroke:none;stroke-width:0.529166;stroke-linecap:round;stroke-linejoin:round"
        id="rect236"
        width="264.58334"
-       height="26.458332"
+       height="158.75"
        x="-264.58334"
-       y="-26.458332"
+       y="-158.75"
        rx="3.9448221e-07"
-       ry="7.8155512e-07"
+       ry="4.6893306e-06"
        transform="scale(-1)" />
     <rect
        style="fill:url(#linearGradient16203);fill-opacity:1;stroke:none;stroke-width:0.216031;stroke-linecap:round;stroke-linejoin:round"
@@ -152,32 +131,12 @@
        ry="7.8155512e-07"
        transform="scale(-1)" />
     <rect
-       style="fill:url(#linearGradient16217);fill-opacity:1;stroke:none;stroke-width:0.216031;stroke-linecap:round;stroke-linejoin:round"
-       id="rect16211"
-       width="264.58334"
-       height="26.458332"
-       x="-264.58331"
-       y="-79.375"
-       rx="3.9448221e-07"
-       ry="7.8155512e-07"
-       transform="scale(-1)" />
-    <rect
        style="fill:url(#linearGradient16215);fill-opacity:1;stroke:none;stroke-width:0.216031;stroke-linecap:round;stroke-linejoin:round"
        id="rect16213"
        width="264.58334"
        height="26.458332"
        x="-264.58328"
        y="-105.83333"
-       rx="3.9448221e-07"
-       ry="7.8155512e-07"
-       transform="scale(-1)" />
-    <rect
-       style="fill:url(#linearGradient16225);fill-opacity:1;stroke:none;stroke-width:0.216031;stroke-linecap:round;stroke-linejoin:round"
-       id="rect16219"
-       width="264.58334"
-       height="26.458332"
-       x="-264.58331"
-       y="-132.29166"
        rx="3.9448221e-07"
        ry="7.8155512e-07"
        transform="scale(-1)" />

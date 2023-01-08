@@ -1,6 +1,7 @@
 extends CanvasLayer
 
 
+const MASK_NOISE = preload("res://assets/img/transition_masks/noise.png")
 const MASK_BOTTOM_TO_TOP = preload("res://assets/img/transition_masks/bottom_to_top.svg")
 const MASK_CENTER_FROM = preload("res://assets/img/transition_masks/center_from.svg")
 const MASK_CENTER_TO = preload("res://assets/img/transition_masks/center_to.svg")
@@ -21,18 +22,17 @@ const MASK_STRIPES_HORIZ = preload("res://assets/img/transition_masks/stripes_ho
 const MASK_STRIPES_VERT = preload("res://assets/img/transition_masks/stripes_vert.svg")
 const MASK_TOP_TO_BOTTOM = preload("res://assets/img/transition_masks/top_to_bottom.svg")
 
-
-const MASKS = [MASK_RIGHT_TO_LEFT, MASK_HOLES, MASK_SNAKE_HORIZ, MASK_CENTER_TO,
-		MASK_DIAG_BOTTOM_RIGHT, MASK_STRIPES_HORIZ, MASK_DIAG_TOP_LEFT, MASK_SNAKE_SPIRAL,
-		MASK_TOP_TO_BOTTOM, MASK_DOTS, MASK_DIAG_TOP_RIGHT, MASK_CENTER_FROM,
-		MASK_LEFT_TO_RIGHT, MASK_STRIPES_VERT, MASK_SQUARES, MASK_DIAG_BOTTOM_LEFT,
-		MASK_SNAKE_VERT, MASK_BOTTOM_TO_TOP, MASK_SPIRAL]
-const MASKS_COUNT = 19
+const MASKS = [MASK_NOISE, MASK_RIGHT_TO_LEFT, MASK_HOLES, MASK_SNAKE_HORIZ,
+		MASK_CENTER_TO, MASK_DIAG_BOTTOM_RIGHT, MASK_STRIPES_HORIZ, MASK_DIAG_TOP_LEFT,
+		MASK_SNAKE_SPIRAL, MASK_TOP_TO_BOTTOM, MASK_DOTS, MASK_DIAG_TOP_RIGHT,
+		MASK_SPIRAL, MASK_LEFT_TO_RIGHT, MASK_STRIPES_VERT, MASK_SQUARES,
+		MASK_DIAG_BOTTOM_LEFT, MASK_SNAKE_VERT, MASK_BOTTOM_TO_TOP, MASK_CENTER_FROM]
+const MASKS_COUNT = 20
 
 
 onready var _anim_player = $AnimationPlayer
 onready var _rect = $TextureRect
-var _last_animation := 3
+var _next_animation := 7
 
 
 func change_scene(target: String):
@@ -52,15 +52,14 @@ func reload_current_scene():
 
 
 func _animate():
-	#print(ANIMATION[_last_animation])
 	(_rect.material as ShaderMaterial).set_shader_param(
-			"mask", MASKS[_last_animation])
+			"mask", MASKS[_next_animation])
 	_rect.visible = true
 	_anim_player.play("transition")
 	yield(_anim_player, "animation_finished")
 	_rect.visible = false
 	_rect.mouse_filter = Control.MOUSE_FILTER_IGNORE
-	_last_animation = (_last_animation + 1 + randi() % 2) % MASKS_COUNT
+	_next_animation = (_next_animation + 1 + randi() % 2) % MASKS_COUNT
 
 
 func _bake_viewport_to_sprite():
