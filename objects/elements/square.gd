@@ -44,7 +44,7 @@ func _compute_points():
 
 func _draw():
 	if _is_matched:
-		draw_colored_polygon(_points, Color.white, _uvs, _texture)
+		draw_colored_polygon(_points, Color.white, _uvs, TEXTURE)
 	else:
 		draw_rect(Rect2(-_side_length_vector, _side_length_vector * 2.0),
 				Color.webgray if _is_matched else Color.deepskyblue, true)

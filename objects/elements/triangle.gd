@@ -37,6 +37,6 @@ func _get_mass():
 
 func _draw():
 	if _is_matched:
-		draw_colored_polygon(_points, Color.white, _uvs, _texture)
+		draw_colored_polygon(_points, Color.white, _uvs, TEXTURE)
 	else:
 		draw_colored_polygon(_points,  Color( 0.4, 0.9, 0.1, 1))

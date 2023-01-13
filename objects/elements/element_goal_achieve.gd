@@ -2,7 +2,7 @@ class_name ElementGoalAchieve
 extends Node2D
 
 
-const _texture = preload("res://assets/img/goal_texture.png")
+const TEXTURE = preload("res://assets/img/goal_texture.png")
 
 
 var _points: PoolVector2Array
@@ -19,4 +19,4 @@ func _ready():
 
 
 func _draw():
-	draw_colored_polygon(_points, Color.white, _uvs, _texture)
+	draw_colored_polygon(_points, Color.white, _uvs, TEXTURE)

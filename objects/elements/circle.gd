@@ -23,7 +23,7 @@ func _compute_points():
 
 func _draw():
 	if _is_matched:
-		draw_colored_polygon(_points, Color.white, _uvs, _texture)
+		draw_colored_polygon(_points, Color.white, _uvs, TEXTURE)
 	else:
 		draw_circle(Vector2.ZERO, size_vector_length,
 				Color.webgray if _is_matched else Color(0.9, 0.2, 0.2, 1))

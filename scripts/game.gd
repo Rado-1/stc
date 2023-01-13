@@ -8,9 +8,10 @@ const GLOBAL_SECTION = "global"
 const LEVEL_KEY = "achieved_level"
 const MUSIC_VOLUME_KEY = "music_volume"
 const FX_VOLUME_KEY = "fx_volume"
+const CURSOR_HAND = preload("res://assets/img/cursor_hand.png")
+const CURSOR_FORBIDDEN = preload("res://assets/img/cursor_forbidden.png")
 
 
-var _cursor_hand = preload("res://assets/img/cursor_hand.png")
 var selected_shape
 var current_level: int
 var _goal_count: int
@@ -25,7 +26,8 @@ func _init():
 	# general settings
 	randomize()
 	Input.use_accumulated_input = true
-	Input.set_custom_mouse_cursor(_cursor_hand, Input.CURSOR_POINTING_HAND, Vector2(26, 3))
+	Input.set_custom_mouse_cursor(CURSOR_HAND, Input.CURSOR_POINTING_HAND, Vector2(26, 3))
+	Input.set_custom_mouse_cursor(CURSOR_FORBIDDEN, Input.CURSOR_FORBIDDEN, Vector2(31, 31))
 	# is flickering
 	#OS.window_maximized = true
 

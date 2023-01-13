@@ -3,7 +3,7 @@ class_name Element
 extends RigidBody2D
 
 
-const _texture = preload("res://assets/img/goal_texture.png")
+const TEXTURE = preload("res://assets/img/goal_texture.png")
 const ElementGoalAchieve = preload("res://objects/elements/element_goal_achieve.tscn")
 const DENSITY = 0.01
 const MIN_MASS = 1.5

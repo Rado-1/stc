@@ -23,4 +23,3 @@ radius = 70.0
 [node name="GoalSquare" parent="Goals" instance=ExtResource( 4 )]
 position = Vector2( 500, 519 )
 rotation = 0.785398
-scale = Vector2( 1, 1 )
