@@ -15,6 +15,27 @@ max_circles = 10
 max_squares = 0
 max_triangles = 0
 
+[node name="Line2D2" type="Line2D" parent="."]
+position = Vector2( -120, 11 )
+points = PoolVector2Array( 570, 150, 550, 80 )
+width = 1.0
+width_curve = SubResource( 1 )
+default_color = Color( 1, 1, 1, 1 )
+antialiased = true
+
+[node name="Label" type="Label" parent="."]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -110.0
+margin_top = -449.0
+margin_right = 34.0
+margin_bottom = -404.0
+custom_fonts/font = ExtResource( 3 )
+text = "you have limited
+amount of shapes"
+
 [node name="StandardRoom" parent="." instance=ExtResource( 5 )]
 
 [node name="Goals" type="Node" parent="."]
@@ -36,24 +57,3 @@ radius = 20.0
 
 [node name="GoalCircle3" parent="Goals" instance=ExtResource( 2 )]
 position = Vector2( 380, 310 )
-
-[node name="Line2D2" type="Line2D" parent="."]
-position = Vector2( -120, 11 )
-points = PoolVector2Array( 570, 150, 550, 80 )
-width = 1.0
-width_curve = SubResource( 1 )
-default_color = Color( 1, 1, 1, 1 )
-antialiased = true
-
-[node name="Label2" type="Label" parent="."]
-anchor_left = 0.5
-anchor_top = 1.0
-anchor_right = 0.5
-anchor_bottom = 1.0
-margin_left = -110.0
-margin_top = -449.0
-margin_right = 34.0
-margin_bottom = -404.0
-custom_fonts/font = ExtResource( 3 )
-text = "you have limited
-amount of shapes"

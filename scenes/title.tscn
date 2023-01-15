@@ -546,7 +546,7 @@ custom_icons/grabber = ExtResource( 13 )
 custom_styles/slider = SubResource( 3 )
 custom_styles/grabber_area_highlight = SubResource( 5 )
 custom_styles/grabber_area = SubResource( 4 )
-max_value = 77.0
+max_value = 86.0
 value = 1.0
 rounded = true
 

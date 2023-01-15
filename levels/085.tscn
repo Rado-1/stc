@@ -5,7 +5,7 @@
 [ext_resource path="res://objects/goals/goal_square.tscn" type="PackedScene" id=4]
 [ext_resource path="res://assets/fonts/outlined.tres" type="DynamicFont" id=5]
 
-[node name="083" type="Node"]
+[node name="085" type="Node"]
 script = ExtResource( 2 )
 max_circles = 0
 max_squares = 27
@@ -54,87 +54,87 @@ text = "Menkaure"
 
 [node name="Goals" type="Node" parent="."]
 
-[node name="GoalSquare" parent="." instance=ExtResource( 4 )]
+[node name="GoalSquare" parent="Goals" instance=ExtResource( 4 )]
 position = Vector2( 545, 548 )
 rotation = 0.785398
 size = 30.0
 
-[node name="GoalSquare2" parent="." instance=ExtResource( 4 )]
+[node name="GoalSquare2" parent="Goals" instance=ExtResource( 4 )]
 position = Vector2( 630, 548 )
 rotation = 0.785398
 size = 30.0
 
-[node name="GoalSquare3" parent="." instance=ExtResource( 4 )]
+[node name="GoalSquare3" parent="Goals" instance=ExtResource( 4 )]
 position = Vector2( 715, 548 )
 rotation = 0.785398
 size = 30.0
 
-[node name="GoalSquare4" parent="." instance=ExtResource( 4 )]
+[node name="GoalSquare4" parent="Goals" instance=ExtResource( 4 )]
 position = Vector2( 630, 463 )
 rotation = 0.785398
 size = 30.0
 
-[node name="GoalSquare14" parent="." instance=ExtResource( 4 )]
+[node name="GoalSquare14" parent="Goals" instance=ExtResource( 4 )]
 position = Vector2( 813, 562 )
 rotation = 0.785398
 size = 20.0
 
-[node name="GoalSquare15" parent="." instance=ExtResource( 4 )]
+[node name="GoalSquare15" parent="Goals" instance=ExtResource( 4 )]
 position = Vector2( 870, 562 )
 rotation = 0.785398
 size = 20.0
 
-[node name="GoalSquare16" parent="." instance=ExtResource( 4 )]
+[node name="GoalSquare16" parent="Goals" instance=ExtResource( 4 )]
 position = Vector2( 927, 562 )
 rotation = 0.785398
 size = 20.0
 
-[node name="GoalSquare17" parent="." instance=ExtResource( 4 )]
+[node name="GoalSquare17" parent="Goals" instance=ExtResource( 4 )]
 position = Vector2( 870, 506 )
 rotation = 0.785398
 size = 20.0
 
-[node name="GoalSquare5" parent="." instance=ExtResource( 4 )]
+[node name="GoalSquare5" parent="Goals" instance=ExtResource( 4 )]
 position = Vector2( 90.0002, 548 )
 rotation = 0.785398
 size = 30.0
 
-[node name="GoalSquare6" parent="." instance=ExtResource( 4 )]
+[node name="GoalSquare6" parent="Goals" instance=ExtResource( 4 )]
 position = Vector2( 175, 548 )
 rotation = 0.785398
 size = 30.0
 
-[node name="GoalSquare7" parent="." instance=ExtResource( 4 )]
+[node name="GoalSquare7" parent="Goals" instance=ExtResource( 4 )]
 position = Vector2( 260, 548 )
 rotation = 0.785398
 size = 30.0
 
-[node name="GoalSquare8" parent="." instance=ExtResource( 4 )]
+[node name="GoalSquare8" parent="Goals" instance=ExtResource( 4 )]
 position = Vector2( 175, 463 )
 rotation = 0.785398
 size = 30.0
 
-[node name="GoalSquare12" parent="." instance=ExtResource( 4 )]
+[node name="GoalSquare12" parent="Goals" instance=ExtResource( 4 )]
 position = Vector2( 260, 463 )
 rotation = 0.785398
 size = 30.0
 
-[node name="GoalSquare13" parent="." instance=ExtResource( 4 )]
+[node name="GoalSquare13" parent="Goals" instance=ExtResource( 4 )]
 position = Vector2( 260, 378 )
 rotation = 0.785398
 size = 30.0
 
-[node name="GoalSquare9" parent="." instance=ExtResource( 4 )]
+[node name="GoalSquare9" parent="Goals" instance=ExtResource( 4 )]
 position = Vector2( 345, 548 )
 rotation = 0.785398
 size = 30.0
 
-[node name="GoalSquare10" parent="." instance=ExtResource( 4 )]
+[node name="GoalSquare10" parent="Goals" instance=ExtResource( 4 )]
 position = Vector2( 430, 548 )
 rotation = 0.785398
 size = 30.0
 
-[node name="GoalSquare11" parent="." instance=ExtResource( 4 )]
+[node name="GoalSquare11" parent="Goals" instance=ExtResource( 4 )]
 position = Vector2( 345, 463 )
 rotation = 0.785398
 size = 30.0

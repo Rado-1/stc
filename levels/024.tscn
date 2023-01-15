@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://scripts/level.gd" type="Script" id=1]
 [ext_resource path="res://objects/goals/goal_square.tscn" type="PackedScene" id=2]
+[ext_resource path="res://assets/fonts/outlined.tres" type="DynamicFont" id=3]
 [ext_resource path="res://objects/rooms/standard_room.tscn" type="PackedScene" id=5]
 
 [node name="024" type="Node"]
@@ -9,6 +10,18 @@ script = ExtResource( 1 )
 max_circles = 0
 max_squares = 10
 max_triangles = 0
+
+[node name="Label" type="Label" parent="."]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -71.5
+margin_top = -166.0
+margin_right = 71.5
+margin_bottom = -145.0
+custom_fonts/font = ExtResource( 3 )
+text = "The Gateway Arch"
 
 [node name="StandardRoom" parent="." instance=ExtResource( 5 )]
 

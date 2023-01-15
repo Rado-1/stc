@@ -42,48 +42,43 @@ size = 10.0
 
 [node name="GoalCircle" parent="Goals" instance=ExtResource( 4 )]
 position = Vector2( 917, 540 )
-scale = Vector2( 1, 1 )
 
 [node name="GoalCircle2" parent="Goals" instance=ExtResource( 4 )]
 position = Vector2( 828, 550 )
-scale = Vector2( 1, 1 )
 radius = 40.0
 
 [node name="GoalCircle3" parent="Goals" instance=ExtResource( 4 )]
 position = Vector2( 759, 560 )
-scale = Vector2( 1, 1 )
 radius = 30.0
 
 [node name="GoalCircle4" parent="Goals" instance=ExtResource( 4 )]
 position = Vector2( 710, 570 )
-scale = Vector2( 1, 1 )
 radius = 20.0
 
 [node name="GoalCircle5" parent="Goals" instance=ExtResource( 4 )]
 position = Vector2( 680, 576 )
-scale = Vector2( 1, 1 )
 radius = 10.0
 
-[node name="GoalTriangle" parent="." instance=ExtResource( 5 )]
+[node name="GoalTriangle" parent="Goals" instance=ExtResource( 5 )]
 position = Vector2( 489, 493.2 )
 rotation = 1.22173
 
-[node name="GoalTriangle2" parent="." instance=ExtResource( 5 )]
+[node name="GoalTriangle2" parent="Goals" instance=ExtResource( 5 )]
 position = Vector2( 472, 414.2 )
 rotation = 1.22173
 size = 40.0
 
-[node name="GoalTriangle3" parent="." instance=ExtResource( 5 )]
+[node name="GoalTriangle3" parent="Goals" instance=ExtResource( 5 )]
 position = Vector2( 463, 354.2 )
 rotation = 1.22173
 size = 30.0
 
-[node name="GoalTriangle4" parent="." instance=ExtResource( 5 )]
+[node name="GoalTriangle4" parent="Goals" instance=ExtResource( 5 )]
 position = Vector2( 460, 312.7 )
 rotation = 1.22173
 size = 20.0
 
-[node name="GoalTriangle5" parent="." instance=ExtResource( 5 )]
+[node name="GoalTriangle5" parent="Goals" instance=ExtResource( 5 )]
 position = Vector2( 464, 290 )
 rotation = 1.22173
 size = 10.0

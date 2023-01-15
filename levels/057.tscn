@@ -1,48 +1,122 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://scripts/level.gd" type="Script" id=1]
 [ext_resource path="res://objects/rooms/standard_room.tscn" type="PackedScene" id=2]
 [ext_resource path="res://objects/goals/goal_square.tscn" type="PackedScene" id=3]
-[ext_resource path="res://assets/fonts/outlined.tres" type="DynamicFont" id=4]
-[ext_resource path="res://objects/goals/goal_triangle.tscn" type="PackedScene" id=5]
-[ext_resource path="res://objects/goals/goal_circle.tscn" type="PackedScene" id=6]
 
 [node name="057" type="Node"]
 script = ExtResource( 1 )
-max_circles = 3
-max_squares = 2
-max_triangles = 1
 
 [node name="StandardRoom" parent="." instance=ExtResource( 2 )]
 
 [node name="Goals" type="Node" parent="."]
 
-[node name="GoalTriangle" parent="Goals" instance=ExtResource( 5 )]
-position = Vector2( 500, 520 )
-rotation = 3.14159
-size = 60.0
+[node name="GoalSquare6" parent="Goals" instance=ExtResource( 3 )]
+position = Vector2( 430, 490 )
+size = 20.0
+
+[node name="GoalSquare7" parent="Goals" instance=ExtResource( 3 )]
+position = Vector2( 510, 290 )
+size = 20.0
 
 [node name="GoalSquare2" parent="Goals" instance=ExtResource( 3 )]
-position = Vector2( 500, 435 )
+position = Vector2( 710, 250 )
+size = 20.0
+
+[node name="GoalSquare14" parent="Goals" instance=ExtResource( 3 )]
+position = Vector2( 310, 250 )
+size = 20.0
+
+[node name="GoalSquare26" parent="Goals" instance=ExtResource( 3 )]
+position = Vector2( 510, 250 )
+size = 20.0
+
+[node name="GoalSquare8" parent="Goals" instance=ExtResource( 3 )]
+position = Vector2( 510, 490 )
+size = 20.0
+
+[node name="GoalSquare9" parent="Goals" instance=ExtResource( 3 )]
+position = Vector2( 460, 180 )
+
+[node name="GoalSquare27" parent="Goals" instance=ExtResource( 3 )]
+position = Vector2( 560, 180 )
+
+[node name="GoalSquare28" parent="Goals" instance=ExtResource( 3 )]
+position = Vector2( 630, 170 )
+size = 20.0
+
+[node name="GoalSquare29" parent="Goals" instance=ExtResource( 3 )]
+position = Vector2( 390, 170 )
+size = 20.0
 
 [node name="GoalSquare3" parent="Goals" instance=ExtResource( 3 )]
-position = Vector2( 500, 335 )
+position = Vector2( 470, 330 )
+size = 20.0
 
-[node name="GoalCircle" parent="Goals" instance=ExtResource( 6 )]
-position = Vector2( 450, 235 )
+[node name="GoalSquare15" parent="Goals" instance=ExtResource( 3 )]
+position = Vector2( 370, 230 )
+size = 40.0
 
-[node name="GoalCircle2" parent="Goals" instance=ExtResource( 6 )]
-position = Vector2( 550, 235 )
+[node name="GoalSquare10" parent="Goals" instance=ExtResource( 3 )]
+position = Vector2( 590, 490 )
+size = 20.0
 
-[node name="Label" type="Label" parent="."]
-anchor_left = 0.5
-anchor_top = 1.0
-anchor_right = 0.5
-anchor_bottom = 1.0
-margin_left = -280.0
-margin_top = -230.0
-margin_right = -128.0
-margin_bottom = -209.0
-rect_rotation = -4.4
-custom_fonts/font = ExtResource( 4 )
-text = "this is not a rocket..."
+[node name="GoalSquare11" parent="Goals" instance=ExtResource( 3 )]
+position = Vector2( 450, 430 )
+size = 40.0
+
+[node name="GoalSquare16" parent="Goals" instance=ExtResource( 3 )]
+position = Vector2( 370, 390 )
+size = 40.0
+
+[node name="GoalSquare12" parent="Goals" instance=ExtResource( 3 )]
+position = Vector2( 430, 370 )
+size = 20.0
+
+[node name="GoalSquare13" parent="Goals" instance=ExtResource( 3 )]
+position = Vector2( 570, 430 )
+size = 40.0
+
+[node name="GoalSquare5" parent="Goals" instance=ExtResource( 3 )]
+position = Vector2( 510, 450 )
+size = 20.0
+
+[node name="GoalSquare22" parent="Goals" instance=ExtResource( 3 )]
+position = Vector2( 470, 370 )
+size = 20.0
+
+[node name="GoalSquare23" parent="Goals" instance=ExtResource( 3 )]
+position = Vector2( 530, 350 )
+size = 40.0
+
+[node name="GoalSquare17" parent="Goals" instance=ExtResource( 3 )]
+position = Vector2( 430, 530 )
+size = 20.0
+
+[node name="GoalSquare30" parent="Goals" instance=ExtResource( 3 )]
+position = Vector2( 590, 530 )
+size = 20.0
+
+[node name="GoalSquare18" parent="Goals" instance=ExtResource( 3 )]
+position = Vector2( 650, 390 )
+size = 40.0
+
+[node name="GoalSquare24" parent="Goals" instance=ExtResource( 3 )]
+position = Vector2( 690, 310 )
+size = 40.0
+
+[node name="GoalSquare25" parent="Goals" instance=ExtResource( 3 )]
+position = Vector2( 330, 310 )
+size = 40.0
+
+[node name="GoalSquare19" parent="Goals" instance=ExtResource( 3 )]
+position = Vector2( 590, 370 )
+size = 20.0
+
+[node name="GoalSquare20" parent="Goals" instance=ExtResource( 3 )]
+position = Vector2( 650, 230 )
+size = 40.0
+
+[node name="GoalSquare21" parent="Goals" instance=ExtResource( 3 )]
+position = Vector2( 510, 530 )
+size = 20.0
