@@ -1,3 +1,4 @@
+# Abstract level class.
 class_name Level
 extends Node
 
@@ -23,6 +24,9 @@ var _hud: Hud
 
 
 func _ready():
+	if Screenshooter.is_active:
+		Screenshooter.take_screenshot()
+
 	Game.is_scene_just_opening = false
 	Game.is_level_accomplished = false
 

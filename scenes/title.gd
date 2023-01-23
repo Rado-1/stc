@@ -5,6 +5,7 @@ var _is_settings_open := false
 
 
 func _ready():
+	Screenshooter.is_active = false
 	Game.is_scene_just_opening = false
 	_set_achieved_level()
 	Audio.tick_reset()

@@ -89,6 +89,7 @@ config/windows_native_icon="res://assets/img/icon.ico"
 Audio="*res://scenes/audio.tscn"
 Game="*res://scripts/game.gd"
 SceneTransition="*res://scenes/scene_transition.tscn"
+Screenshooter="*res://tools/screenshooter.gd"
 
 [display]
 
