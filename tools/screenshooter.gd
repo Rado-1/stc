@@ -3,6 +3,8 @@ extends Node
 
 
 const OUT_DIR = "res://dist/levels_screenshots/"
+const SCALE_X = 500
+const SCALE_Y = 300
 
 
 var is_active := false
@@ -50,7 +52,7 @@ func take_screenshot():
 	yield(get_tree(), "idle_frame")
 	var img = get_viewport().get_texture().get_data()
 	img.flip_y()
-	img.resize(250, 150, Image.INTERPOLATE_CUBIC)
+	img.resize(SCALE_X, SCALE_Y, Image.INTERPOLATE_BILINEAR)
 	# warning-ignore:return_value_discarded
 	img.save_png(output_file)
 	print(output_file)
