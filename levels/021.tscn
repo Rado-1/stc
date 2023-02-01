@@ -34,7 +34,7 @@ margin_right = 34.0
 margin_bottom = -404.0
 custom_fonts/font = ExtResource( 3 )
 text = "you have limited
-amount of shapes"
+amount of objects"
 
 [node name="StandardRoom" parent="." instance=ExtResource( 5 )]
 
