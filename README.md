@@ -14,11 +14,15 @@ The current version 1.0 provides 100 levels. This number may be increased in nex
 * Esc - back
 * R - retry level
 
+## Homepage and Download
+
+* [itch.io](https://rado1.itch.io/stc)
+
 ## Development
 
-Checkout the git repo and open it in the Godot editor.
+Checkout the git repository and open it in Godot editor.
 
-The repo contains also a tool to export screenshots of all existing levels. It is activated by running the tools/screenshooter_start.tscn scene.
+The repository contains also a tool to export screenshots of all existing levels. It is activated by running the tools/screenshooter_start.tscn scene.
 
 The code structuring enables quite easy creation of new levels, rooms with specific shapes and gravity, or even new object types.
 

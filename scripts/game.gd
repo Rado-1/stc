@@ -35,8 +35,8 @@ func _init():
 	_config.load(CONFIG_FILE)
 	current_level = _config.get_value(GLOBAL_SECTION, LEVEL_KEY, 0)
 	Audio.set_volumes(
-			_config.get_value(GLOBAL_SECTION, MUSIC_VOLUME_KEY, 0.5),
-			_config.get_value(GLOBAL_SECTION, FX_VOLUME_KEY, 0.5))
+			_config.get_value(GLOBAL_SECTION, MUSIC_VOLUME_KEY, 0.1),
+			_config.get_value(GLOBAL_SECTION, FX_VOLUME_KEY, 0.1))
 
 
 func save_current_level():

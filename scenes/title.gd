@@ -9,8 +9,11 @@ func _ready():
 	Game.is_scene_just_opening = false
 	_set_achieved_level()
 	Audio.tick_reset()
+
+	# OS-specific displaying
 	$LabelsAndButtons/PressKeyLabel.text = "tap to start" if OS.get_name() == "Android" \
 			else "press any key to start"
+	$LabelsAndButtons/ExitButton.visible = OS.get_name() != "HTML5"
 
 	if Game.is_title_first_time:
 		$AnimationPlayer.play("appear")
