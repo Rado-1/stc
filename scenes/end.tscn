@@ -60,7 +60,8 @@ margin_right = 150.0
 margin_bottom = 126.5
 custom_fonts/font = ExtResource( 1 )
 text = "You accomplished all levels.
-Thank you for playing the game and looking forward to new versions with more exiting levels.
+
+Thank you for playing the game and looking forward to new ones.
 
 Rado1"
 valign = 1

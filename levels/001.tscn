@@ -21,14 +21,15 @@ position = Vector2( 500, 490 )
 radius = 100.0
 
 [node name="Line2D" type="Line2D" parent="."]
-points = PoolVector2Array( 395, 370, 430, 415 )
+position = Vector2( 7, 2 )
+points = PoolVector2Array( 550, 370, 540, 400 )
 width = 1.0
 width_curve = SubResource( 1 )
 default_color = Color( 1, 1, 1, 1 )
 antialiased = true
 
 [node name="Line2D2" type="Line2D" parent="."]
-points = PoolVector2Array( 580, 155, 550, 80 )
+points = PoolVector2Array( 560, 150, 530, 80 )
 width = 1.0
 width_curve = SubResource( 1 )
 default_color = Color( 1, 1, 1, 1 )
@@ -39,30 +40,56 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-margin_left = -229.0
-margin_top = -241.0
-margin_right = -28.0
-margin_bottom = -220.0
-rect_rotation = -4.4
+margin_left = -7.0
+margin_top = -280.0
+margin_right = 215.0
+margin_bottom = -235.0
+rect_rotation = 4.4
 custom_fonts/font = ExtResource( 4 )
-text = "put circle of this size here"
+text = "4. put the object of the right
+    shape and size here"
+
+[node name="Label6" type="Label" parent="."]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -4.99997
+margin_top = -380.0
+margin_right = 229.0
+margin_bottom = -359.0
+rect_rotation = -5.4
+custom_fonts/font = ExtResource( 4 )
+text = "2. click/tap to create an object"
+
+[node name="Label7" type="Label" parent="."]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -2.0
+margin_top = -330.0
+margin_right = 249.0
+margin_bottom = -309.0
+custom_fonts/font = ExtResource( 4 )
+text = "3. drag/slide to resize and rotate"
 
 [node name="Label2" type="Label" parent="."]
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-margin_left = -8.0
-margin_top = -435.0
-margin_right = 166.0
-margin_bottom = -414.0
+margin_left = -14.0
+margin_top = -429.0
+margin_right = 204.0
+margin_bottom = -408.0
 rect_rotation = -15.0
 custom_fonts/font = ExtResource( 4 )
-text = "select shape to create"
+text = "1. select the shape to create"
 
 [node name="Line2D5" type="Line2D" parent="."]
 position = Vector2( 275.63, 419 )
-points = PoolVector2Array( 625.37, 73, 673.37, 126 )
+points = PoolVector2Array( 634.37, 81, 673.37, 126 )
 width = 1.0
 width_curve = SubResource( 1 )
 default_color = Color( 1, 1, 1, 1 )
@@ -73,17 +100,17 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-margin_left = 344.0
-margin_top = -71.0
-margin_right = 471.0
-margin_bottom = -50.0
-rect_rotation = -48.9
+margin_left = 331.0
+margin_top = -85.9999
+margin_right = 481.0
+margin_bottom = -64.9999
+rect_rotation = -27.4
 custom_fonts/font = ExtResource( 4 )
-text = "gravity direction"
+text = "direction of gravity "
 
 [node name="Line2D3" type="Line2D" parent="."]
 position = Vector2( -500, -20 )
-points = PoolVector2Array( 570, 130, 550, 80 )
+points = PoolVector2Array( 560, 120, 550, 80 )
 width = 1.0
 width_curve = SubResource( 1 )
 default_color = Color( 1, 1, 1, 1 )
@@ -103,7 +130,7 @@ text = "back"
 
 [node name="Line2D4" type="Line2D" parent="."]
 position = Vector2( 331, -24 )
-points = PoolVector2Array( 594, 129, 619, 84 )
+points = PoolVector2Array( 599, 124, 619, 84 )
 width = 1.0
 width_curve = SubResource( 1 )
 default_color = Color( 1, 1, 1, 1 )
@@ -115,8 +142,8 @@ anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
 margin_left = 367.0
-margin_top = -503.0
+margin_top = -501.0
 margin_right = 443.0
-margin_bottom = -482.0
+margin_bottom = -480.0
 custom_fonts/font = ExtResource( 4 )
 text = "retry level"

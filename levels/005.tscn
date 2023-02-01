@@ -1,9 +1,8 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://objects/rooms/standard_room.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scripts/level.gd" type="Script" id=2]
 [ext_resource path="res://objects/goals/goal_triangle.tscn" type="PackedScene" id=3]
-[ext_resource path="res://assets/fonts/outlined.tres" type="DynamicFont" id=4]
 
 [node name="005" type="Node"]
 script = ExtResource( 2 )
@@ -16,15 +15,3 @@ script = ExtResource( 2 )
 position = Vector2( 500, 474 )
 rotation = 1.0472
 size = 100.0
-
-[node name="Label" type="Label" parent="."]
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = -60.0
-margin_top = -80.0
-margin_right = 60.0
-margin_bottom = -59.0
-custom_fonts/font = ExtResource( 4 )
-text = "is it possible?"
