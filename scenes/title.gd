@@ -12,7 +12,7 @@ func _ready():
 
 	# OS-specific displaying
 	$LabelsAndButtons/PressKeyLabel.text = "tap to start" if OS.get_name() == "Android" \
-			else "press any key to start"
+			else "click to start"
 	$LabelsAndButtons/ExitButton.visible = OS.get_name() != "HTML5"
 
 	if Game.is_title_first_time:
@@ -27,7 +27,7 @@ func _set_achieved_level():
 		$LabelsAndButtons/AchievedLevelLabel.text = ""
 
 
-func _unhandled_input(event):
+func _unhandled_input(_event):
 	if Input.is_action_just_pressed("ui_cancel"):
 		if _is_settings_open:
 			_on_OkButton_pressed()
@@ -35,7 +35,7 @@ func _unhandled_input(event):
 			get_tree().quit()
 	elif Input.is_action_just_pressed("ui_accept") && _is_settings_open:
 		_on_OkButton_pressed()
-	elif event.is_pressed() && !_is_settings_open:
+	elif Input.is_action_pressed("click") && !_is_settings_open:
 		Audio.button_click()
 		_is_settings_open = true # hack to filter multiple taps on Android
 		Game.goto_next_level()

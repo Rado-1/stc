@@ -25,7 +25,7 @@ visible = false
 shape = SubResource( 1 )
 
 [node name="GravityInward" type="Sprite" parent="."]
-position = Vector2( 460, 250 )
+position = Vector2( -460, 250 )
 scale = Vector2( 0.5, 0.5 )
 z_index = 15
 z_as_relative = false

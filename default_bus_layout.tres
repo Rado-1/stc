@@ -8,6 +8,7 @@ feedback/active = true
 resource_name = "Chorus"
 
 [resource]
+bus/0/volume_db = -8.0
 bus/1/name = "FX"
 bus/1/solo = false
 bus/1/mute = false

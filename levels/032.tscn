@@ -27,7 +27,7 @@ position = Vector2( 650, 300 )
 [node name="Line2D5" type="Line2D" parent="."]
 position = Vector2( 275.63, 419 )
 z_index = 5
-points = PoolVector2Array( 444.37, 41, 644.37, 121 )
+points = PoolVector2Array( -25.63, 21, -195.63, 111 )
 width = 1.0
 width_curve = SubResource( 1 )
 default_color = Color( 1, 1, 1, 1 )
@@ -38,12 +38,12 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-margin_left = 120.0
-margin_top = -110.0
-margin_right = 258.0
-margin_bottom = -65.0
-rect_rotation = -45.0
+margin_left = -229.0
+margin_top = -220.0
+margin_right = -80.0
+margin_bottom = -175.0
+rect_rotation = 45.0
 custom_fonts/font = ExtResource( 4 )
 text = "WARNING!
-gravity is changing"
+gravity is changed"
 align = 1

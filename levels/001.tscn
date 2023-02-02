@@ -88,8 +88,8 @@ custom_fonts/font = ExtResource( 4 )
 text = "1. select the shape to create"
 
 [node name="Line2D5" type="Line2D" parent="."]
-position = Vector2( 275.63, 419 )
-points = PoolVector2Array( 634.37, 81, 673.37, 126 )
+position = Vector2( -535.37, 404.03 )
+points = PoolVector2Array( 625.37, 85.9702, 595.37, 125.97 )
 width = 1.0
 width_curve = SubResource( 1 )
 default_color = Color( 1, 1, 1, 1 )
@@ -100,11 +100,11 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-margin_left = 331.0
-margin_top = -85.9999
-margin_right = 481.0
-margin_bottom = -64.9999
-rect_rotation = -27.4
+margin_left = -451.0
+margin_top = -160.0
+margin_right = -301.0
+margin_bottom = -139.0
+rect_rotation = 27.4
 custom_fonts/font = ExtResource( 4 )
 text = "direction of gravity "
 

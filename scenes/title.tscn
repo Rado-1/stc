@@ -1,11 +1,10 @@
-[gd_scene load_steps=36 format=2]
+[gd_scene load_steps=35 format=2]
 
 [ext_resource path="res://assets/fonts/default.tres" type="DynamicFont" id=1]
 [ext_resource path="res://assets/img/reset.svg" type="Texture" id=2]
 [ext_resource path="res://scenes/title.gd" type="Script" id=3]
 [ext_resource path="res://assets/fonts/Montserrat-Light.ttf" type="DynamicFontData" id=4]
 [ext_resource path="res://assets/img/exit.svg" type="Texture" id=5]
-[ext_resource path="res://assets/img/logo.svg" type="Texture" id=6]
 [ext_resource path="res://assets/img/exit_pressed.svg" type="Texture" id=7]
 [ext_resource path="res://assets/img/settings_pressed.svg" type="Texture" id=8]
 [ext_resource path="res://assets/img/settings.svg" type="Texture" id=9]
@@ -317,16 +316,14 @@ align = 2
 valign = 1
 
 [node name="PressKeyLabel" type="Label" parent="LabelsAndButtons"]
-anchor_left = 0.5
-anchor_top = 1.0
-anchor_right = 0.5
-anchor_bottom = 1.0
-margin_left = 417.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+margin_left = 450.0
 margin_top = 575.0
-margin_right = 582.5
+margin_right = 550.0
 margin_bottom = 600.0
 custom_fonts/font = ExtResource( 1 )
-text = "press any key to start"
+text = "click to start"
 align = 1
 
 [node name="VersionLabel" type="Label" parent="LabelsAndButtons"]
@@ -334,10 +331,10 @@ anchor_left = 1.0
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = 964.0
-margin_top = 575.0
-margin_right = 992.0
-margin_bottom = 600.0
+margin_left = 10.0
+margin_top = 574.0
+margin_right = 38.0
+margin_bottom = 599.0
 custom_fonts/font = ExtResource( 1 )
 text = "v1.0"
 align = 2
@@ -345,13 +342,12 @@ align = 2
 [node name="AchievedLevelLabel" type="Label" parent="LabelsAndButtons"]
 anchor_left = 1.0
 anchor_right = 1.0
-margin_left = 840.0
-margin_top = 20.0
-margin_right = 981.0
-margin_bottom = 41.0
+margin_left = 65.0
+margin_top = 17.0
+margin_right = 206.0
+margin_bottom = 38.0
 custom_fonts/font = ExtResource( 1 )
 text = "Achieved level: XX"
-align = 2
 valign = 1
 
 [node name="SettingsButton" type="TextureButton" parent="LabelsAndButtons"]
@@ -368,29 +364,15 @@ texture_pressed = ExtResource( 8 )
 [node name="ExitButton" type="TextureButton" parent="LabelsAndButtons"]
 anchor_top = 1.0
 anchor_bottom = 1.0
-margin_left = 8.0
-margin_top = 552.0
-margin_right = 72.0
-margin_bottom = 616.0
+margin_left = 944.0
+margin_top = 19.0
+margin_right = 1008.0
+margin_bottom = 83.0
 rect_scale = Vector2( 0.6, 0.6 )
 mouse_default_cursor_shape = 2
 shortcut_in_tooltip = false
 texture_normal = ExtResource( 5 )
 texture_pressed = ExtResource( 7 )
-
-[node name="TextureRect" type="TextureRect" parent="."]
-visible = false
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = -131.5
-margin_top = -63.5
-margin_right = 131.5
-margin_bottom = 63.5
-rect_scale = Vector2( 0.5, 0.5 )
-mouse_filter = 2
-texture = ExtResource( 6 )
 
 [node name="Logo" type="Node2D" parent="."]
 position = Vector2( 500, 300 )

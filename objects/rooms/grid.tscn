@@ -21,7 +21,7 @@ visible = false
 shape = SubResource( 1 )
 
 [node name="GravityDown" type="Sprite" parent="."]
-position = Vector2( 960, 550 )
+position = Vector2( 40, 550 )
 scale = Vector2( 0.5, 0.5 )
 z_index = 15
 z_as_relative = false
